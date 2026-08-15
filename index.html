@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clutch Index — pressure-adjusted IPL batting</title>
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --page-plane:     #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --gridline:       #e1e0d9;
+    --baseline:       #c3c2b7;
+    --border:         rgba(11,11,11,0.10);
+    --series-blue:    #2a78d6;
+    --series-red:     #e34948;
+    --seq-250:        #86b6ef;
+    --seq-450:        #2a78d6;
+    --seq-600:        #184f95;
+    --good-text:      #006300;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --surface-1:      #1a1a19;
+      --page-plane:     #0d0d0d;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --gridline:       #2c2c2a;
+      --baseline:       #383835;
+      --border:         rgba(255,255,255,0.10);
+      --series-blue:    #3987e5;
+      --series-red:     #e66767;
+      --seq-250:        #5598e7;
+      --seq-450:        #3987e5;
+      --seq-600:        #104281;
+      --good-text:      #0ca30c;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--page-plane);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 28px 20px 80px;
+  }
+
+  header.hero {
+    padding: 8px 0 20px;
+    border-bottom: 1px solid var(--gridline);
+    margin-bottom: 20px;
+  }
+  header.hero h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 6px;
+  }
+  header.hero p.tagline {
+    font-size: 15px;
+    color: var(--text-secondary);
+    max-width: 62ch;
+    margin: 0 0 16px;
+    line-height: 1.5;
+  }
+  .badges { display: flex; flex-wrap: wrap; gap: 8px; }
+  .badge {
+    font-size: 12px;
+    color: var(--text-secondary);
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-variant-numeric: tabular-nums;
+  }
+  .badge strong { color: var(--text-primary); }
+
+  .fetch-note {
+    display: none;
+    font-size: 13px;
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--series-red);
+    border-radius: 6px;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+  }
+  .fetch-note.show { display: block; }
+  .fetch-note code {
+    background: var(--page-plane);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 12px;
+  }
+
+  nav.tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--gridline);
+  }
+  nav.tabs button {
+    appearance: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+  nav.tabs button:hover { color: var(--text-primary); }
+  nav.tabs button.active {
+    color: var(--text-primary);
+    border-bottom-color: var(--series-blue);
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+  .toolbar p.desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin: 0;
+    max-width: 56ch;
+  }
+  input#search {
+    font-family: inherit;
+    font-size: 13px;
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 7px 10px;
+    color: var(--text-primary);
+    min-width: 200px;
+  }
+  input#search:focus { outline: 2px solid var(--series-blue); outline-offset: -1px; }
+
+  .table-scroll {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface-1);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+    min-width: 780px;
+  }
+  thead th {
+    position: sticky; top: 0;
+    background: var(--surface-1);
+    text-align: right;
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--gridline);
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+  }
+  thead th:hover { color: var(--text-primary); }
+  thead th.col-name, thead th.col-rank { text-align: left; }
+  thead th .arrow { font-size: 10px; margin-left: 3px; opacity: 0.6; }
+
+  tbody td {
+    padding: 9px 12px;
+    text-align: right;
+    border-bottom: 1px solid var(--gridline);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  tbody td.col-name, tbody td.col-rank { text-align: left; }
+  tbody tr.player-row { cursor: pointer; }
+  tbody tr.player-row:hover td { background: var(--page-plane); }
+  tbody tr:last-child td { border-bottom: none; }
+
+  td.col-rank { color: var(--text-muted); width: 32px; }
+  td.col-name { font-weight: 600; }
+  td.col-name .sub { display: block; font-weight: 400; font-size: 11px; color: var(--text-muted); }
+
+  .delta { font-weight: 600; }
+  .delta.pos { color: var(--good-text); }
+  .delta.neg { color: var(--series-red); }
+  .delta.flat { color: var(--text-muted); font-weight: 400; }
+
+  .conf-cell { display: inline-flex; align-items: center; gap: 6px; }
+  .conf-track {
+    width: 40px; height: 6px;
+    background: var(--gridline);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .conf-fill { height: 100%; background: var(--series-blue); border-radius: 3px; }
+
+  tr.detail-row td { padding: 0; border-bottom: 1px solid var(--gridline); }
+  .detail-panel {
+    padding: 16px 20px 20px;
+    background: var(--page-plane);
+    text-align: left;
+    white-space: normal;
+  }
+  .detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 640px) { .detail-grid { grid-template-columns: 1fr; } }
+  .detail-panel h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-muted);
+    margin: 0 0 10px;
+  }
+  .bar-row { margin-bottom: 9px; }
+  .bar-row .bar-label {
+    display: flex; justify-content: space-between;
+    font-size: 12px; color: var(--text-secondary); margin-bottom: 3px;
+  }
+  .bar-row .bar-label .val { font-variant-numeric: tabular-nums; color: var(--text-primary); font-weight: 600; }
+  .bar-track { height: 10px; background: var(--gridline); border-radius: 3px; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 3px; }
+  .bar-fill.low  { background: var(--seq-250); }
+  .bar-fill.conv { background: var(--text-muted); }
+  .bar-fill.high { background: var(--seq-600); }
+  .detail-meta {
+    font-size: 12px; color: var(--text-secondary); line-height: 1.7;
+    border-top: 1px solid var(--gridline);
+    margin-top: 14px; padding-top: 12px;
+  }
+  .detail-meta strong { color: var(--text-primary); }
+
+  .empty {
+    padding: 40px; text-align: center; color: var(--text-muted); font-size: 14px;
+  }
+
+  footer {
+    margin-top: 28px;
+    padding-top: 16px;
+    border-top: 1px solid var(--gridline);
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+  footer a { color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>Clutch Index</h1>
+    <p class="tagline">
+      Every ball of every IPL run-chase, scored 0&ndash;1 for match pressure, then batters
+      re-ranked by how they perform specifically when the chase is on the line &mdash;
+      not by the situation-blind average and strike rate everyone already quotes.
+    </p>
+    <div class="badges" id="badges">
+      <span class="badge">loading&hellip;</span>
+    </div>
+  </header>
+
+  <div class="fetch-note" id="fetchNote">
+    <strong>Data didn't load.</strong> Some browsers (Chrome in particular) block a page
+    opened directly from disk (<code>file://</code>) from fetching another local file for
+    security reasons. Fix: from this folder run <code>python3 -m http.server 8000</code>
+    and open <code>http://localhost:8000</code> instead &mdash; or open this file in
+    Firefox/Safari, which allow it directly. No server-side code involved either way;
+    this is a static page reading a static JSON file.
+  </div>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="leaderboard" class="active">Leaderboard</button>
+    <button data-tab="underrated">Most Underrated</button>
+    <button data-tab="overrated">Most Overrated</button>
+  </nav>
+
+  <div class="toolbar">
+    <p class="desc" id="tabDesc"></p>
+    <input id="search" type="search" placeholder="Filter by player name&hellip;">
+  </div>
+
+  <div class="table-scroll">
+    <table>
+      <thead><tr id="headerRow"></tr></thead>
+      <tbody id="tbody"><tr><td class="empty" colspan="10">Loading out/clutch.json&hellip;</td></tr></tbody>
+    </table>
+  </div>
+
+  <footer>
+    Δ SR / Δ Avg = high-pressure figure minus conventional (all run-chase balls) figure,
+    Bayesian-shrunk toward 0 by how many high-pressure balls/dismissals back the number
+    &mdash; a player with only 20 high-pressure balls won't outrank one with 400 on a lucky
+    stretch. Hover a Δ cell for the raw (unshrunk) number. Click any row for the
+    low/conventional/high-pressure breakdown. Scope: IPL run-chases only, batting only
+    &mdash; see README.md "Honest limits" for what this deliberately does not cover.
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  var DATA_URL = "out/clutch.json";
+  var state = { data: null, tab: "leaderboard", sortKey: "delta_sr", sortDir: "desc", query: "", openRow: null };
+
+  var columns = [
+    { key: "rank", label: "#", cls: "col-rank", sortable: false },
+    { key: "name", label: "Player", cls: "col-name", sortable: true,
+      get: function (p) { return p.name; } },
+    { key: "chase_balls", label: "Chase balls", sortable: true,
+      get: function (p) { return p.chase_balls; },
+      fmt: function (v) { return v.toLocaleString(); } },
+    { key: "conv_sr", label: "Conv. SR", sortable: true,
+      get: function (p) { return p.conventional.sr; } },
+    { key: "hi_sr", label: "High-pressure SR", sortable: true,
+      get: function (p) { return p.high_pressure.sr; } },
+    { key: "delta_sr", label: "Δ SR", sortable: true, isDelta: true,
+      get: function (p) { return p.delta_sr; },
+      raw: function (p) { return p.delta_sr_raw; },
+      volume: function (p) { return p.high_pressure.balls + " high-pressure balls"; } },
+    { key: "conv_avg", label: "Conv. Avg", sortable: true,
+      get: function (p) { return p.conventional.avg; } },
+    { key: "hi_avg", label: "High-pressure Avg", sortable: true,
+      get: function (p) { return p.high_pressure.avg; } },
+    { key: "delta_avg", label: "Δ Avg", sortable: true, isDelta: true,
+      get: function (p) { return p.delta_avg; },
+      raw: function (p) { return p.delta_avg_raw; },
+      volume: function (p) { return p.high_pressure.outs + " high-pressure dismissals"; } },
+    { key: "confidence", label: "Confidence", sortable: true,
+      get: function (p) { return p.confidence; } },
+  ];
+
+  var TAB_DESC = {
+    leaderboard: "All qualifying batters (≥ 60 career run-chase balls faced, with at least 20 balls in both the low- and high-pressure bucket). Sortable by any column.",
+    underrated: "Top 20 by Δ SR: batters who score FASTER, relative to their own conventional strike rate, once the chase gets genuinely tight.",
+    overrated: "Bottom 20 by Δ SR: batters whose strike rate falls furthest below their own conventional number once the chase gets genuinely tight."
+  };
+
+  function fmtNum(v, digits) {
+    if (v === null || v === undefined) return "—";
+    return v.toFixed(digits === undefined ? 1 : digits);
+  }
+
+  function renderBadges(d) {
+    var m = d.methodology;
+    var html = "";
+    html += '<span class="badge"><strong>' + d.n_qualifying_players + '</strong> qualifying batters</span>';
+    html += '<span class="badge"><strong>' + d.n_chase_deliveries_faced.toLocaleString() + '</strong> chase balls scored</span>';
+    html += '<span class="badge">pressure tertiles: low ≤ ' + m.tertile_cutoffs.low_max + ' &middot; high ≥ ' + m.tertile_cutoffs.high_min + '</span>';
+    html += '<span class="badge">zero API calls &middot; deterministic &middot; fully offline</span>';
+    document.getElementById("badges").innerHTML = html;
+  }
+
+  function currentRows() {
+    var players = state.data.players.slice();
+    if (state.tab === "underrated") {
+      players = players.filter(function (p) { return p.delta_sr !== null; })
+        .sort(function (a, b) { return b.delta_sr - a.delta_sr; }).slice(0, 20);
+    } else if (state.tab === "overrated") {
+      players = players.filter(function (p) { return p.delta_sr !== null; })
+        .sort(function (a, b) { return a.delta_sr - b.delta_sr; }).slice(0, 20);
+    } else {
+      var col = columns.filter(function (c) { return c.key === state.sortKey; })[0];
+      var dir = state.sortDir === "asc" ? 1 : -1;
+      players.sort(function (a, b) {
+        var av = col.get(a), bv = col.get(b);
+        if (av === null || av === undefined) return 1;
+        if (bv === null || bv === undefined) return -1;
+        if (typeof av === "string") return dir * av.localeCompare(bv);
+        return dir * (av - bv);
+      });
+    }
+    if (state.query.trim()) {
+      var q = state.query.trim().toLowerCase();
+      players = players.filter(function (p) { return p.name.toLowerCase().indexOf(q) !== -1; });
+    }
+    return players;
+  }
+
+  function renderHeader() {
+    var row = document.getElementById("headerRow");
+    row.innerHTML = "";
+    columns.forEach(function (c) {
+      var th = document.createElement("th");
+      th.className = c.cls || "";
+      var arrow = "";
+      if (state.tab === "leaderboard" && c.sortable && c.key === state.sortKey) {
+        arrow = '<span class="arrow">' + (state.sortDir === "asc" ? "▲" : "▼") + "</span>";
+      }
+      th.innerHTML = c.label + arrow;
+      if (c.sortable && state.tab === "leaderboard") {
+        th.addEventListener("click", function () {
+          if (state.sortKey === c.key) {
+            state.sortDir = state.sortDir === "asc" ? "desc" : "asc";
+          } else {
+            state.sortKey = c.key;
+            state.sortDir = "desc";
+          }
+          render();
+        });
+      }
+      row.appendChild(th);
+    });
+  }
+
+  function deltaCellHtml(col, p) {
+    var v = col.get(p);
+    if (v === null || v === undefined) return '<span class="delta flat">n/a</span>';
+    var cls = v > 0.5 ? "pos" : v < -0.5 ? "neg" : "flat";
+    var sign = v > 0 ? "+" : "";
+    var title = "raw (unshrunk): " + (col.raw(p) === null ? "n/a" : (col.raw(p) > 0 ? "+" : "") + fmtNum(col.raw(p), 2))
+      + " · " + col.volume(p) + " · " + Math.round(p.confidence * 100) + "% confidence";
+    return '<span class="delta ' + cls + '" title="' + title + '">' + sign + fmtNum(v, 2) + "</span>";
+  }
+
+  function rowHtml(p, idx) {
+    var cells = columns.map(function (c) {
+      if (c.key === "rank") return '<td class="col-rank">' + (idx + 1) + "</td>";
+      if (c.key === "name") {
+        var ctx = p.career_matches ? p.career_matches + " career IPL matches" : "";
+        return '<td class="col-name">' + p.name + (ctx ? '<span class="sub">' + ctx + "</span>" : "") + "</td>";
+      }
+      if (c.isDelta) return "<td>" + deltaCellHtml(c, p) + "</td>";
+      if (c.key === "confidence") {
+        var pct = Math.round(p.confidence * 100);
+        return '<td><span class="conf-cell">' + pct + '%<span class="conf-track"><span class="conf-fill" style="width:' + pct + '%"></span></span></span></td>';
+      }
+      var v = c.get(p);
+      var text = v === null || v === undefined ? "—" : (c.fmt ? c.fmt(v) : fmtNum(v, c.key.indexOf("sr") !== -1 || c.key === "conv_avg" || c.key === "hi_avg" ? 1 : 2));
+      return "<td>" + text + "</td>";
+    });
+    return cells.join("");
+  }
+
+  function detailHtml(p) {
+    function bars(low, conv, high, digits) {
+      var max = Math.max(low || 0, conv || 0, high || 0) * 1.15 || 1;
+      function row(label, val, cls) {
+        var pct = val === null || val === undefined ? 0 : (val / max) * 100;
+        var text = val === null || val === undefined ? "not out / n/a" : val.toFixed(digits);
+        return '<div class="bar-row"><div class="bar-label"><span>' + label + '</span><span class="val">' + text + '</span></div>' +
+          '<div class="bar-track"><div class="bar-fill ' + cls + '" style="width:' + pct + '%"></div></div></div>';
+      }
+      return row("Low pressure", low, "low") + row("Conventional (all)", conv, "conv") + row("High pressure", high, "high");
+    }
+    var hp = p.high_pressure, lp = p.low_pressure, cv = p.conventional;
+    return '<div class="detail-panel"><div class="detail-grid">' +
+      '<div><h4>Strike rate by pressure bucket</h4>' + bars(lp.sr, cv.sr, hp.sr, 1) + "</div>" +
+      '<div><h4>Average by pressure bucket</h4>' + bars(lp.avg, cv.avg, hp.avg, 1) + "</div>" +
+      "</div>" +
+      '<div class="detail-meta">' +
+      "<strong>" + p.chase_balls.toLocaleString() + "</strong> career run-chase balls faced across <strong>" + p.chase_innings + "</strong> chase innings" +
+      (p.career_matches ? " &middot; <strong>" + p.career_matches + "</strong> career IPL matches, <strong>" + (p.career_runs || 0).toLocaleString() + "</strong> career runs (all innings)" : "") + "<br>" +
+      "High-pressure bucket: <strong>" + hp.balls + "</strong> balls, <strong>" + hp.outs + "</strong> dismissals &middot; " +
+      "Low-pressure bucket: <strong>" + lp.balls + "</strong> balls, <strong>" + lp.outs + "</strong> dismissals<br>" +
+      "Δ SR " + (p.delta_sr_raw > 0 ? "+" : "") + fmtNum(p.delta_sr_raw, 2) + " raw → " + (p.delta_sr > 0 ? "+" : "") + fmtNum(p.delta_sr, 2) + " after shrinkage (confidence " + Math.round(p.confidence * 100) + "%)" +
+      "</div></div>";
+  }
+
+  function render() {
+    renderHeader();
+    document.getElementById("tabDesc").textContent = TAB_DESC[state.tab];
+    var rows = currentRows();
+    var tbody = document.getElementById("tbody");
+    tbody.innerHTML = "";
+    if (rows.length === 0) {
+      tbody.innerHTML = '<tr><td class="empty" colspan="' + columns.length + '">No players match.</td></tr>';
+      return;
+    }
+    rows.forEach(function (p, idx) {
+      var tr = document.createElement("tr");
+      tr.className = "player-row";
+      tr.innerHTML = rowHtml(p, idx);
+      tr.addEventListener("click", function () {
+        var already = tr.nextSibling && tr.nextSibling.classList && tr.nextSibling.classList.contains("detail-row");
+        var existingDetail = tbody.querySelector(".detail-row");
+        if (existingDetail) existingDetail.remove();
+        if (!already) {
+          var dtr = document.createElement("tr");
+          dtr.className = "detail-row";
+          var td = document.createElement("td");
+          td.colSpan = columns.length;
+          td.innerHTML = detailHtml(p);
+          dtr.appendChild(td);
+          tr.parentNode.insertBefore(dtr, tr.nextSibling);
+        }
+      });
+      tbody.appendChild(tr);
+    });
+  }
+
+  document.getElementById("tabs").addEventListener("click", function (e) {
+    var btn = e.target.closest("button[data-tab]");
+    if (!btn) return;
+    document.querySelectorAll("nav.tabs button").forEach(function (b) { b.classList.remove("active"); });
+    btn.classList.add("active");
+    state.tab = btn.getAttribute("data-tab");
+    render();
+  });
+
+  document.getElementById("search").addEventListener("input", function (e) {
+    state.query = e.target.value;
+    render();
+  });
+
+  fetch(DATA_URL)
+    .then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    })
+    .then(function (data) {
+      state.data = data;
+      renderBadges(data);
+      render();
+    })
+    .catch(function (err) {
+      document.getElementById("fetchNote").classList.add("show");
+      document.getElementById("badges").innerHTML = '<span class="badge">data failed to load</span>';
+      document.getElementById("tbody").innerHTML = '<tr><td class="empty" colspan="10">Could not load out/clutch.json (' + err.message + '). See note above.</td></tr>';
+      console.error(err);
+    });
+})();
+</script>
+</body>
+</html>
