@@ -1,0 +1,4948 @@
+{
+ "methodology": {
+  "scope": "IPL run-chases only (second innings batting to a target); batting only",
+  "pressure_weights": {
+   "required_run_rate_gap": 0.5,
+   "wickets_ratio": 0.3,
+   "lateness": 0.2,
+   "death_over_multiplier": 1.15
+  },
+  "tertile_cutoffs": {
+   "low_max": 0.1297,
+   "high_min": 0.2528
+  },
+  "qualification": {
+   "min_chase_balls": 60,
+   "min_bucket_balls": 20
+  },
+  "shrinkage": {
+   "target_sr_balls": 60,
+   "target_avg_outs": 8,
+   "pool_mean_delta": 0.0
+  }
+ },
+ "n_qualifying_players": 164,
+ "n_chase_deliveries_faced": 137517,
+ "players": [
+  {
+   "name": "AB de Villiers",
+   "chase_balls": 1450,
+   "chase_innings": 82,
+   "career_matches": 170,
+   "career_runs": 5181,
+   "conventional": {
+    "sr": 137.86,
+    "avg": 32.77,
+    "balls": 1450,
+    "outs": 61
+   },
+   "high_pressure": {
+    "sr": 194.46,
+    "avg": 43.85,
+    "balls": 451,
+    "outs": 20
+   },
+   "low_pressure": {
+    "sr": 101.97,
+    "avg": 29.57,
+    "balls": 406,
+    "outs": 14
+   },
+   "delta_sr_raw": 56.6,
+   "delta_sr": 56.6,
+   "delta_avg_raw": 11.08,
+   "delta_avg": 11.08,
+   "confidence": 1.0
+  },
+  {
+   "name": "C Connolly",
+   "chase_balls": 191,
+   "chase_innings": 8,
+   "career_matches": 13,
+   "career_runs": 491,
+   "conventional": {
+    "sr": 164.92,
+    "avg": 52.5,
+    "balls": 191,
+    "outs": 6
+   },
+   "high_pressure": {
+    "sr": 218.75,
+    "avg": null,
+    "balls": 64,
+    "outs": 0
+   },
+   "low_pressure": {
+    "sr": 133.75,
+    "avg": 26.75,
+    "balls": 80,
+    "outs": 4
+   },
+   "delta_sr_raw": 53.83,
+   "delta_sr": 53.83,
+   "delta_avg_raw": null,
+   "delta_avg": null,
+   "confidence": 1.0
+  },
+  {
+   "name": "KS Williamson",
+   "chase_balls": 911,
+   "chase_innings": 40,
+   "career_matches": 76,
+   "career_runs": 2132,
+   "conventional": {
+    "sr": 118.22,
+    "avg": 34.74,
+    "balls": 911,
+    "outs": 31
+   },
+   "high_pressure": {
+    "sr": 166.02,
+    "avg": 38.64,
+    "balls": 256,
+    "outs": 11
+   },
+   "low_pressure": {
+    "sr": 91.11,
+    "avg": 22.36,
+    "balls": 270,
+    "outs": 11
+   },
+   "delta_sr_raw": 47.8,
+   "delta_sr": 47.8,
+   "delta_avg_raw": 3.9,
+   "delta_avg": 3.9,
+   "confidence": 1.0
+  },
+  {
+   "name": "Sameer Rizvi",
+   "chase_balls": 212,
+   "chase_innings": 11,
+   "career_matches": 18,
+   "career_runs": 424,
+   "conventional": {
+    "sr": 153.3,
+    "avg": 40.62,
+    "balls": 212,
+    "outs": 8
+   },
+   "high_pressure": {
+    "sr": 189.55,
+    "avg": 42.33,
+    "balls": 67,
+    "outs": 3
+   },
+   "low_pressure": {
+    "sr": 35.0,
+    "avg": 7.0,
+    "balls": 20,
+    "outs": 1
+   },
+   "delta_sr_raw": 36.25,
+   "delta_sr": 36.25,
+   "delta_avg_raw": 1.71,
+   "delta_avg": 0.64,
+   "confidence": 1.0
+  },
+  {
+   "name": "MS Bisla",
+   "chase_balls": 469,
+   "chase_innings": 26,
+   "career_matches": 39,
+   "career_runs": 798,
+   "conventional": {
+    "sr": 113.01,
+    "avg": 21.2,
+    "balls": 469,
+    "outs": 25
+   },
+   "high_pressure": {
+    "sr": 148.33,
+    "avg": 22.25,
+    "balls": 60,
+    "outs": 4
+   },
+   "low_pressure": {
+    "sr": 111.3,
+    "avg": 23.93,
+    "balls": 301,
+    "outs": 14
+   },
+   "delta_sr_raw": 35.32,
+   "delta_sr": 35.32,
+   "delta_avg_raw": 1.05,
+   "delta_avg": 0.53,
+   "confidence": 1.0
+  },
+  {
+   "name": "SM Curran",
+   "chase_balls": 318,
+   "chase_innings": 29,
+   "career_matches": 64,
+   "career_runs": 997,
+   "conventional": {
+    "sr": 130.82,
+    "avg": 20.8,
+    "balls": 318,
+    "outs": 20
+   },
+   "high_pressure": {
+    "sr": 164.5,
+    "avg": 21.38,
+    "balls": 169,
+    "outs": 13
+   },
+   "low_pressure": {
+    "sr": 86.84,
+    "avg": 16.5,
+    "balls": 38,
+    "outs": 2
+   },
+   "delta_sr_raw": 33.68,
+   "delta_sr": 33.68,
+   "delta_avg_raw": 0.58,
+   "delta_avg": 0.58,
+   "confidence": 1.0
+  },
+  {
+   "name": "SE Marsh",
+   "chase_balls": 771,
+   "chase_innings": 29,
+   "career_matches": 69,
+   "career_runs": 2489,
+   "conventional": {
+    "sr": 137.48,
+    "avg": 42.4,
+    "balls": 771,
+    "outs": 25
+   },
+   "high_pressure": {
+    "sr": 169.84,
+    "avg": 35.67,
+    "balls": 189,
+    "outs": 9
+   },
+   "low_pressure": {
+    "sr": 110.73,
+    "avg": 51.6,
+    "balls": 233,
+    "outs": 5
+   },
+   "delta_sr_raw": 32.36,
+   "delta_sr": 32.36,
+   "delta_avg_raw": -6.73,
+   "delta_avg": -6.73,
+   "confidence": 1.0
+  },
+  {
+   "name": "TM Dilshan",
+   "chase_balls": 498,
+   "chase_innings": 30,
+   "career_matches": 50,
+   "career_runs": 1153,
+   "conventional": {
+    "sr": 116.47,
+    "avg": 22.31,
+    "balls": 498,
+    "outs": 26
+   },
+   "high_pressure": {
+    "sr": 148.15,
+    "avg": 30.0,
+    "balls": 81,
+    "outs": 4
+   },
+   "low_pressure": {
+    "sr": 111.06,
+    "avg": 18.64,
+    "balls": 235,
+    "outs": 14
+   },
+   "delta_sr_raw": 31.68,
+   "delta_sr": 31.68,
+   "delta_avg_raw": 7.69,
+   "delta_avg": 3.85,
+   "confidence": 1.0
+  },
+  {
+   "name": "SC Ganguly",
+   "chase_balls": 579,
+   "chase_innings": 24,
+   "career_matches": 57,
+   "career_runs": 1349,
+   "conventional": {
+    "sr": 108.46,
+    "avg": 29.9,
+    "balls": 579,
+    "outs": 21
+   },
+   "high_pressure": {
+    "sr": 140.13,
+    "avg": 30.43,
+    "balls": 152,
+    "outs": 7
+   },
+   "low_pressure": {
+    "sr": 88.33,
+    "avg": 31.8,
+    "balls": 180,
+    "outs": 5
+   },
+   "delta_sr_raw": 31.67,
+   "delta_sr": 31.67,
+   "delta_avg_raw": 0.53,
+   "delta_avg": 0.46,
+   "confidence": 1.0
+  },
+  {
+   "name": "SPD Smith",
+   "chase_balls": 1097,
+   "chase_innings": 55,
+   "career_matches": 93,
+   "career_runs": 2495,
+   "conventional": {
+    "sr": 121.6,
+    "avg": 31.02,
+    "balls": 1097,
+    "outs": 43
+   },
+   "high_pressure": {
+    "sr": 152.42,
+    "avg": 35.93,
+    "balls": 330,
+    "outs": 14
+   },
+   "low_pressure": {
+    "sr": 106.53,
+    "avg": 23.93,
+    "balls": 337,
+    "outs": 15
+   },
+   "delta_sr_raw": 30.82,
+   "delta_sr": 30.82,
+   "delta_avg_raw": 4.91,
+   "delta_avg": 4.91,
+   "confidence": 1.0
+  },
+  {
+   "name": "DA Miller",
+   "chase_balls": 1333,
+   "chase_innings": 72,
+   "career_matches": 143,
+   "career_runs": 3288,
+   "conventional": {
+    "sr": 143.66,
+    "avg": 46.71,
+    "balls": 1333,
+    "outs": 41
+   },
+   "high_pressure": {
+    "sr": 174.32,
+    "avg": 42.14,
+    "balls": 701,
+    "outs": 29
+   },
+   "low_pressure": {
+    "sr": 86.14,
+    "avg": 87.0,
+    "balls": 101,
+    "outs": 1
+   },
+   "delta_sr_raw": 30.66,
+   "delta_sr": 30.66,
+   "delta_avg_raw": -4.57,
+   "delta_avg": -4.57,
+   "confidence": 1.0
+  },
+  {
+   "name": "RK Singh",
+   "chase_balls": 438,
+   "chase_innings": 27,
+   "career_matches": 62,
+   "career_runs": 1398,
+   "conventional": {
+    "sr": 154.57,
+    "avg": 45.13,
+    "balls": 438,
+    "outs": 15
+   },
+   "high_pressure": {
+    "sr": 184.27,
+    "avg": 50.78,
+    "balls": 248,
+    "outs": 9
+   },
+   "low_pressure": {
+    "sr": 107.41,
+    "avg": 58.0,
+    "balls": 54,
+    "outs": 1
+   },
+   "delta_sr_raw": 29.7,
+   "delta_sr": 29.7,
+   "delta_avg_raw": 5.65,
+   "delta_avg": 5.65,
+   "confidence": 1.0
+  },
+  {
+   "name": "SW Billings",
+   "chase_balls": 175,
+   "chase_innings": 14,
+   "career_matches": 27,
+   "career_runs": 503,
+   "conventional": {
+    "sr": 137.14,
+    "avg": 18.46,
+    "balls": 175,
+    "outs": 13
+   },
+   "high_pressure": {
+    "sr": 171.15,
+    "avg": 17.8,
+    "balls": 52,
+    "outs": 5
+   },
+   "low_pressure": {
+    "sr": 104.65,
+    "avg": 11.25,
+    "balls": 43,
+    "outs": 4
+   },
+   "delta_sr_raw": 34.01,
+   "delta_sr": 29.48,
+   "delta_avg_raw": -0.66,
+   "delta_avg": -0.41,
+   "confidence": 0.87
+  },
+  {
+   "name": "RS Bopara",
+   "chase_balls": 191,
+   "chase_innings": 7,
+   "career_matches": 24,
+   "career_runs": 531,
+   "conventional": {
+    "sr": 121.99,
+    "avg": 33.29,
+    "balls": 191,
+    "outs": 7
+   },
+   "high_pressure": {
+    "sr": 150.0,
+    "avg": 23.4,
+    "balls": 78,
+    "outs": 5
+   },
+   "low_pressure": {
+    "sr": 121.95,
+    "avg": null,
+    "balls": 41,
+    "outs": 0
+   },
+   "delta_sr_raw": 28.01,
+   "delta_sr": 28.01,
+   "delta_avg_raw": -9.89,
+   "delta_avg": -6.18,
+   "confidence": 1.0
+  },
+  {
+   "name": "R Dravid",
+   "chase_balls": 989,
+   "chase_innings": 46,
+   "career_matches": 82,
+   "career_runs": 2174,
+   "conventional": {
+    "sr": 118.6,
+    "avg": 27.93,
+    "balls": 989,
+    "outs": 42
+   },
+   "high_pressure": {
+    "sr": 146.07,
+    "avg": 20.0,
+    "balls": 178,
+    "outs": 13
+   },
+   "low_pressure": {
+    "sr": 110.77,
+    "avg": 44.58,
+    "balls": 483,
+    "outs": 12
+   },
+   "delta_sr_raw": 27.47,
+   "delta_sr": 27.47,
+   "delta_avg_raw": -7.93,
+   "delta_avg": -7.93,
+   "confidence": 1.0
+  },
+  {
+   "name": "CA Pujara",
+   "chase_balls": 184,
+   "chase_innings": 10,
+   "career_matches": 22,
+   "career_runs": 390,
+   "conventional": {
+    "sr": 98.91,
+    "avg": 26.0,
+    "balls": 184,
+    "outs": 7
+   },
+   "high_pressure": {
+    "sr": 137.21,
+    "avg": 29.5,
+    "balls": 43,
+    "outs": 2
+   },
+   "low_pressure": {
+    "sr": 89.47,
+    "avg": 25.5,
+    "balls": 57,
+    "outs": 2
+   },
+   "delta_sr_raw": 38.3,
+   "delta_sr": 27.45,
+   "delta_avg_raw": 3.5,
+   "delta_avg": 0.88,
+   "confidence": 0.72
+  },
+  {
+   "name": "JEC Franklin",
+   "chase_balls": 213,
+   "chase_innings": 11,
+   "career_matches": 19,
+   "career_runs": 327,
+   "conventional": {
+    "sr": 98.12,
+    "avg": 29.86,
+    "balls": 213,
+    "outs": 7
+   },
+   "high_pressure": {
+    "sr": 125.32,
+    "avg": 33.0,
+    "balls": 79,
+    "outs": 3
+   },
+   "low_pressure": {
+    "sr": 70.0,
+    "avg": 14.0,
+    "balls": 20,
+    "outs": 1
+   },
+   "delta_sr_raw": 27.2,
+   "delta_sr": 27.2,
+   "delta_avg_raw": 3.14,
+   "delta_avg": 1.18,
+   "confidence": 1.0
+  },
+  {
+   "name": "LRPL Taylor",
+   "chase_balls": 538,
+   "chase_innings": 38,
+   "career_matches": 54,
+   "career_runs": 1017,
+   "conventional": {
+    "sr": 131.78,
+    "avg": 27.27,
+    "balls": 538,
+    "outs": 26
+   },
+   "high_pressure": {
+    "sr": 158.33,
+    "avg": 30.08,
+    "balls": 228,
+    "outs": 12
+   },
+   "low_pressure": {
+    "sr": 100.0,
+    "avg": 21.0,
+    "balls": 84,
+    "outs": 4
+   },
+   "delta_sr_raw": 26.55,
+   "delta_sr": 26.55,
+   "delta_avg_raw": 2.81,
+   "delta_avg": 2.81,
+   "confidence": 1.0
+  },
+  {
+   "name": "CL White",
+   "chase_balls": 282,
+   "chase_innings": 19,
+   "career_matches": 45,
+   "career_runs": 971,
+   "conventional": {
+    "sr": 102.13,
+    "avg": 16.94,
+    "balls": 282,
+    "outs": 17
+   },
+   "high_pressure": {
+    "sr": 128.45,
+    "avg": 13.55,
+    "balls": 116,
+    "outs": 11
+   },
+   "low_pressure": {
+    "sr": 81.63,
+    "avg": 20.0,
+    "balls": 49,
+    "outs": 2
+   },
+   "delta_sr_raw": 26.32,
+   "delta_sr": 26.32,
+   "delta_avg_raw": -3.39,
+   "delta_avg": -3.39,
+   "confidence": 1.0
+  },
+  {
+   "name": "M Vohra",
+   "chase_balls": 374,
+   "chase_innings": 25,
+   "career_matches": 51,
+   "career_runs": 1083,
+   "conventional": {
+    "sr": 142.78,
+    "avg": 22.25,
+    "balls": 374,
+    "outs": 24
+   },
+   "high_pressure": {
+    "sr": 186.11,
+    "avg": 67.0,
+    "balls": 36,
+    "outs": 1
+   },
+   "low_pressure": {
+    "sr": 142.06,
+    "avg": 25.57,
+    "balls": 252,
+    "outs": 14
+   },
+   "delta_sr_raw": 43.33,
+   "delta_sr": 26.0,
+   "delta_avg_raw": 44.75,
+   "delta_avg": 5.59,
+   "confidence": 0.6
+  },
+  {
+   "name": "Mandeep Singh",
+   "chase_balls": 639,
+   "chase_innings": 44,
+   "career_matches": 97,
+   "career_runs": 1706,
+   "conventional": {
+    "sr": 127.23,
+    "avg": 23.91,
+    "balls": 639,
+    "outs": 34
+   },
+   "high_pressure": {
+    "sr": 152.97,
+    "avg": 35.38,
+    "balls": 185,
+    "outs": 8
+   },
+   "low_pressure": {
+    "sr": 111.52,
+    "avg": 20.17,
+    "balls": 217,
+    "outs": 12
+   },
+   "delta_sr_raw": 25.74,
+   "delta_sr": 25.74,
+   "delta_avg_raw": 11.47,
+   "delta_avg": 11.47,
+   "confidence": 1.0
+  },
+  {
+   "name": "RG Sharma",
+   "chase_balls": 2666,
+   "chase_innings": 134,
+   "career_matches": 275,
+   "career_runs": 7331,
+   "conventional": {
+    "sr": 129.37,
+    "avg": 29.99,
+    "balls": 2666,
+    "outs": 115
+   },
+   "high_pressure": {
+    "sr": 153.18,
+    "avg": 25.65,
+    "balls": 519,
+    "outs": 31
+   },
+   "low_pressure": {
+    "sr": 124.86,
+    "avg": 33.62,
+    "balls": 1050,
+    "outs": 39
+   },
+   "delta_sr_raw": 23.81,
+   "delta_sr": 23.81,
+   "delta_avg_raw": -4.34,
+   "delta_avg": -4.34,
+   "confidence": 1.0
+  },
+  {
+   "name": "DJ Hussey",
+   "chase_balls": 458,
+   "chase_innings": 25,
+   "career_matches": 61,
+   "career_runs": 1322,
+   "conventional": {
+    "sr": 127.29,
+    "avg": 30.68,
+    "balls": 458,
+    "outs": 19
+   },
+   "high_pressure": {
+    "sr": 151.03,
+    "avg": 26.64,
+    "balls": 194,
+    "outs": 11
+   },
+   "low_pressure": {
+    "sr": 117.78,
+    "avg": 26.5,
+    "balls": 45,
+    "outs": 2
+   },
+   "delta_sr_raw": 23.74,
+   "delta_sr": 23.74,
+   "delta_avg_raw": -4.04,
+   "delta_avg": -4.04,
+   "confidence": 1.0
+  },
+  {
+   "name": "Dhruv Jurel",
+   "chase_balls": 423,
+   "chase_innings": 28,
+   "career_matches": 51,
+   "career_runs": 1195,
+   "conventional": {
+    "sr": 156.74,
+    "avg": 34.89,
+    "balls": 423,
+    "outs": 19
+   },
+   "high_pressure": {
+    "sr": 180.46,
+    "avg": 28.55,
+    "balls": 174,
+    "outs": 11
+   },
+   "low_pressure": {
+    "sr": 159.52,
+    "avg": 33.5,
+    "balls": 84,
+    "outs": 4
+   },
+   "delta_sr_raw": 23.72,
+   "delta_sr": 23.72,
+   "delta_avg_raw": -6.34,
+   "delta_avg": -6.34,
+   "confidence": 1.0
+  },
+  {
+   "name": "Tilak Varma",
+   "chase_balls": 691,
+   "chase_innings": 36,
+   "career_matches": 65,
+   "career_runs": 1858,
+   "conventional": {
+    "sr": 146.89,
+    "avg": 36.25,
+    "balls": 691,
+    "outs": 28
+   },
+   "high_pressure": {
+    "sr": 170.18,
+    "avg": 27.71,
+    "balls": 228,
+    "outs": 14
+   },
+   "low_pressure": {
+    "sr": 128.24,
+    "avg": 168.0,
+    "balls": 131,
+    "outs": 1
+   },
+   "delta_sr_raw": 23.29,
+   "delta_sr": 23.29,
+   "delta_avg_raw": -8.54,
+   "delta_avg": -8.54,
+   "confidence": 1.0
+  },
+  {
+   "name": "A Symonds",
+   "chase_balls": 294,
+   "chase_innings": 17,
+   "career_matches": 36,
+   "career_runs": 974,
+   "conventional": {
+    "sr": 119.73,
+    "avg": 25.14,
+    "balls": 294,
+    "outs": 14
+   },
+   "high_pressure": {
+    "sr": 142.99,
+    "avg": 21.86,
+    "balls": 107,
+    "outs": 7
+   },
+   "low_pressure": {
+    "sr": 74.42,
+    "avg": 16.0,
+    "balls": 43,
+    "outs": 2
+   },
+   "delta_sr_raw": 23.26,
+   "delta_sr": 23.26,
+   "delta_avg_raw": -3.28,
+   "delta_avg": -2.87,
+   "confidence": 1.0
+  },
+  {
+   "name": "Shubman Gill",
+   "chase_balls": 1672,
+   "chase_innings": 67,
+   "career_matches": 130,
+   "career_runs": 4598,
+   "conventional": {
+    "sr": 137.74,
+    "avg": 41.12,
+    "balls": 1672,
+    "outs": 56
+   },
+   "high_pressure": {
+    "sr": 160.34,
+    "avg": 25.36,
+    "balls": 174,
+    "outs": 11
+   },
+   "low_pressure": {
+    "sr": 129.59,
+    "avg": 42.39,
+    "balls": 916,
+    "outs": 28
+   },
+   "delta_sr_raw": 22.6,
+   "delta_sr": 22.6,
+   "delta_avg_raw": -15.76,
+   "delta_avg": -15.76,
+   "confidence": 1.0
+  },
+  {
+   "name": "AT Rayudu",
+   "chase_balls": 1789,
+   "chase_innings": 91,
+   "career_matches": 185,
+   "career_runs": 4348,
+   "conventional": {
+    "sr": 123.03,
+    "avg": 28.96,
+    "balls": 1789,
+    "outs": 76
+   },
+   "high_pressure": {
+    "sr": 145.49,
+    "avg": 26.52,
+    "balls": 565,
+    "outs": 31
+   },
+   "low_pressure": {
+    "sr": 107.32,
+    "avg": 40.62,
+    "balls": 492,
+    "outs": 13
+   },
+   "delta_sr_raw": 22.46,
+   "delta_sr": 22.46,
+   "delta_avg_raw": -2.44,
+   "delta_avg": -2.44,
+   "confidence": 1.0
+  },
+  {
+   "name": "BJ Hodge",
+   "chase_balls": 568,
+   "chase_innings": 31,
+   "career_matches": 63,
+   "career_runs": 1400,
+   "conventional": {
+    "sr": 131.34,
+    "avg": 35.52,
+    "balls": 568,
+    "outs": 21
+   },
+   "high_pressure": {
+    "sr": 153.64,
+    "avg": 28.64,
+    "balls": 261,
+    "outs": 14
+   },
+   "low_pressure": {
+    "sr": 120.99,
+    "avg": 98.0,
+    "balls": 81,
+    "outs": 1
+   },
+   "delta_sr_raw": 22.3,
+   "delta_sr": 22.3,
+   "delta_avg_raw": -6.88,
+   "delta_avg": -6.88,
+   "confidence": 1.0
+  },
+  {
+   "name": "R Ashwin",
+   "chase_balls": 316,
+   "chase_innings": 41,
+   "career_matches": 217,
+   "career_runs": 833,
+   "conventional": {
+    "sr": 115.19,
+    "avg": 11.74,
+    "balls": 316,
+    "outs": 31
+   },
+   "high_pressure": {
+    "sr": 137.44,
+    "avg": 12.18,
+    "balls": 195,
+    "outs": 22
+   },
+   "low_pressure": {
+    "sr": 83.72,
+    "avg": 7.2,
+    "balls": 43,
+    "outs": 5
+   },
+   "delta_sr_raw": 22.25,
+   "delta_sr": 22.25,
+   "delta_avg_raw": 0.44,
+   "delta_avg": 0.44,
+   "confidence": 1.0
+  },
+  {
+   "name": "MK Pandey",
+   "chase_balls": 1783,
+   "chase_innings": 93,
+   "career_matches": 163,
+   "career_runs": 4021,
+   "conventional": {
+    "sr": 119.52,
+    "avg": 28.41,
+    "balls": 1783,
+    "outs": 75
+   },
+   "high_pressure": {
+    "sr": 141.19,
+    "avg": 28.68,
+    "balls": 386,
+    "outs": 19
+   },
+   "low_pressure": {
+    "sr": 112.94,
+    "avg": 33.78,
+    "balls": 688,
+    "outs": 23
+   },
+   "delta_sr_raw": 21.67,
+   "delta_sr": 21.67,
+   "delta_avg_raw": 0.27,
+   "delta_avg": 0.27,
+   "confidence": 1.0
+  },
+  {
+   "name": "BA Stokes",
+   "chase_balls": 401,
+   "chase_innings": 23,
+   "career_matches": 45,
+   "career_runs": 935,
+   "conventional": {
+    "sr": 145.64,
+    "avg": 29.2,
+    "balls": 401,
+    "outs": 20
+   },
+   "high_pressure": {
+    "sr": 167.24,
+    "avg": 24.25,
+    "balls": 116,
+    "outs": 8
+   },
+   "low_pressure": {
+    "sr": 138.76,
+    "avg": 25.57,
+    "balls": 129,
+    "outs": 7
+   },
+   "delta_sr_raw": 21.6,
+   "delta_sr": 21.6,
+   "delta_avg_raw": -4.95,
+   "delta_avg": -4.95,
+   "confidence": 1.0
+  },
+  {
+   "name": "KD Karthik",
+   "chase_balls": 1581,
+   "chase_innings": 111,
+   "career_matches": 233,
+   "career_runs": 4843,
+   "conventional": {
+    "sr": 132.76,
+    "avg": 24.99,
+    "balls": 1581,
+    "outs": 84
+   },
+   "high_pressure": {
+    "sr": 154.19,
+    "avg": 19.61,
+    "balls": 585,
+    "outs": 46
+   },
+   "low_pressure": {
+    "sr": 92.16,
+    "avg": 20.89,
+    "balls": 204,
+    "outs": 9
+   },
+   "delta_sr_raw": 21.43,
+   "delta_sr": 21.43,
+   "delta_avg_raw": -5.38,
+   "delta_avg": -5.38,
+   "confidence": 1.0
+  },
+  {
+   "name": "Lalit Yadav",
+   "chase_balls": 219,
+   "chase_innings": 15,
+   "career_matches": 25,
+   "career_runs": 305,
+   "conventional": {
+    "sr": 111.42,
+    "avg": 22.18,
+    "balls": 219,
+    "outs": 11
+   },
+   "high_pressure": {
+    "sr": 132.81,
+    "avg": 21.25,
+    "balls": 128,
+    "outs": 8
+   },
+   "low_pressure": {
+    "sr": 86.49,
+    "avg": 32.0,
+    "balls": 37,
+    "outs": 1
+   },
+   "delta_sr_raw": 21.39,
+   "delta_sr": 21.39,
+   "delta_avg_raw": -0.93,
+   "delta_avg": -0.93,
+   "confidence": 1.0
+  },
+  {
+   "name": "N Rana",
+   "chase_balls": 1234,
+   "chase_innings": 64,
+   "career_matches": 123,
+   "career_runs": 3078,
+   "conventional": {
+    "sr": 134.36,
+    "avg": 29.09,
+    "balls": 1234,
+    "outs": 57
+   },
+   "high_pressure": {
+    "sr": 155.08,
+    "avg": 24.89,
+    "balls": 305,
+    "outs": 19
+   },
+   "low_pressure": {
+    "sr": 121.77,
+    "avg": 35.8,
+    "balls": 441,
+    "outs": 15
+   },
+   "delta_sr_raw": 20.72,
+   "delta_sr": 20.72,
+   "delta_avg_raw": -4.2,
+   "delta_avg": -4.2,
+   "confidence": 1.0
+  },
+  {
+   "name": "N Wadhera",
+   "chase_balls": 283,
+   "chase_innings": 21,
+   "career_matches": 37,
+   "career_runs": 784,
+   "conventional": {
+    "sr": 138.52,
+    "avg": 23.06,
+    "balls": 283,
+    "outs": 17
+   },
+   "high_pressure": {
+    "sr": 159.18,
+    "avg": 14.18,
+    "balls": 98,
+    "outs": 11
+   },
+   "low_pressure": {
+    "sr": 137.93,
+    "avg": null,
+    "balls": 29,
+    "outs": 0
+   },
+   "delta_sr_raw": 20.66,
+   "delta_sr": 20.66,
+   "delta_avg_raw": -8.88,
+   "delta_avg": -8.88,
+   "confidence": 1.0
+  },
+  {
+   "name": "SV Samson",
+   "chase_balls": 1922,
+   "chase_innings": 103,
+   "career_matches": 185,
+   "career_runs": 5181,
+   "conventional": {
+    "sr": 137.51,
+    "avg": 29.37,
+    "balls": 1922,
+    "outs": 90
+   },
+   "high_pressure": {
+    "sr": 157.95,
+    "avg": 19.86,
+    "balls": 352,
+    "outs": 28
+   },
+   "low_pressure": {
+    "sr": 124.55,
+    "avg": 32.5,
+    "balls": 835,
+    "outs": 32
+   },
+   "delta_sr_raw": 20.44,
+   "delta_sr": 20.44,
+   "delta_avg_raw": -9.51,
+   "delta_avg": -9.51,
+   "confidence": 1.0
+  },
+  {
+   "name": "TL Suman",
+   "chase_balls": 357,
+   "chase_innings": 23,
+   "career_matches": 40,
+   "career_runs": 676,
+   "conventional": {
+    "sr": 109.24,
+    "avg": 20.53,
+    "balls": 357,
+    "outs": 19
+   },
+   "high_pressure": {
+    "sr": 129.36,
+    "avg": 20.14,
+    "balls": 109,
+    "outs": 7
+   },
+   "low_pressure": {
+    "sr": 80.82,
+    "avg": 8.43,
+    "balls": 73,
+    "outs": 7
+   },
+   "delta_sr_raw": 20.12,
+   "delta_sr": 20.12,
+   "delta_avg_raw": -0.39,
+   "delta_avg": -0.34,
+   "confidence": 1.0
+  },
+  {
+   "name": "DJ Bravo",
+   "chase_balls": 582,
+   "chase_innings": 54,
+   "career_matches": 160,
+   "career_runs": 1560,
+   "conventional": {
+    "sr": 121.82,
+    "avg": 20.85,
+    "balls": 582,
+    "outs": 34
+   },
+   "high_pressure": {
+    "sr": 141.89,
+    "avg": 20.0,
+    "balls": 296,
+    "outs": 21
+   },
+   "low_pressure": {
+    "sr": 103.85,
+    "avg": 54.0,
+    "balls": 52,
+    "outs": 1
+   },
+   "delta_sr_raw": 20.07,
+   "delta_sr": 20.07,
+   "delta_avg_raw": -0.85,
+   "delta_avg": -0.85,
+   "confidence": 1.0
+  },
+  {
+   "name": "SS Iyer",
+   "chase_balls": 1491,
+   "chase_innings": 68,
+   "career_matches": 144,
+   "career_runs": 4233,
+   "conventional": {
+    "sr": 140.98,
+    "avg": 42.9,
+    "balls": 1491,
+    "outs": 49
+   },
+   "high_pressure": {
+    "sr": 161.01,
+    "avg": 23.4,
+    "balls": 218,
+    "outs": 15
+   },
+   "low_pressure": {
+    "sr": 117.88,
+    "avg": 38.0,
+    "balls": 548,
+    "outs": 17
+   },
+   "delta_sr_raw": 20.03,
+   "delta_sr": 20.03,
+   "delta_avg_raw": -19.5,
+   "delta_avg": -19.5,
+   "confidence": 1.0
+  },
+  {
+   "name": "KS Bharat",
+   "chase_balls": 104,
+   "chase_innings": 5,
+   "career_matches": 8,
+   "career_runs": 199,
+   "conventional": {
+    "sr": 136.54,
+    "avg": 35.5,
+    "balls": 104,
+    "outs": 4
+   },
+   "high_pressure": {
+    "sr": 172.73,
+    "avg": 57.0,
+    "balls": 33,
+    "outs": 1
+   },
+   "low_pressure": {
+    "sr": 115.38,
+    "avg": 30.0,
+    "balls": 26,
+    "outs": 1
+   },
+   "delta_sr_raw": 36.19,
+   "delta_sr": 19.9,
+   "delta_avg_raw": 21.5,
+   "delta_avg": 2.69,
+   "confidence": 0.55
+  },
+  {
+   "name": "DJ Hooda",
+   "chase_balls": 544,
+   "chase_innings": 48,
+   "career_matches": 107,
+   "career_runs": 1497,
+   "conventional": {
+    "sr": 118.38,
+    "avg": 15.71,
+    "balls": 544,
+    "outs": 41
+   },
+   "high_pressure": {
+    "sr": 138.13,
+    "avg": 16.14,
+    "balls": 257,
+    "outs": 22
+   },
+   "low_pressure": {
+    "sr": 93.18,
+    "avg": 10.25,
+    "balls": 44,
+    "outs": 4
+   },
+   "delta_sr_raw": 19.75,
+   "delta_sr": 19.75,
+   "delta_avg_raw": 0.43,
+   "delta_avg": 0.43,
+   "confidence": 1.0
+  },
+  {
+   "name": "M Manhas",
+   "chase_balls": 278,
+   "chase_innings": 23,
+   "career_matches": 38,
+   "career_runs": 514,
+   "conventional": {
+    "sr": 105.04,
+    "avg": 24.33,
+    "balls": 278,
+    "outs": 12
+   },
+   "high_pressure": {
+    "sr": 124.64,
+    "avg": 19.11,
+    "balls": 138,
+    "outs": 9
+   },
+   "low_pressure": {
+    "sr": 100.0,
+    "avg": 51.0,
+    "balls": 51,
+    "outs": 1
+   },
+   "delta_sr_raw": 19.6,
+   "delta_sr": 19.6,
+   "delta_avg_raw": -5.22,
+   "delta_avg": -5.22,
+   "confidence": 1.0
+  },
+  {
+   "name": "MS Dhoni",
+   "chase_balls": 1728,
+   "chase_innings": 101,
+   "career_matches": 241,
+   "career_runs": 5439,
+   "conventional": {
+    "sr": 135.19,
+    "avg": 39.59,
+    "balls": 1728,
+    "outs": 59
+   },
+   "high_pressure": {
+    "sr": 154.72,
+    "avg": 43.59,
+    "balls": 1155,
+    "outs": 41
+   },
+   "low_pressure": {
+    "sr": 65.38,
+    "avg": 34.0,
+    "balls": 52,
+    "outs": 1
+   },
+   "delta_sr_raw": 19.53,
+   "delta_sr": 19.53,
+   "delta_avg_raw": 4.0,
+   "delta_avg": 4.0,
+   "confidence": 1.0
+  },
+  {
+   "name": "WG Jacks",
+   "chase_balls": 199,
+   "chase_innings": 12,
+   "career_matches": 27,
+   "career_runs": 602,
+   "conventional": {
+    "sr": 166.83,
+    "avg": 36.89,
+    "balls": 199,
+    "outs": 9
+   },
+   "high_pressure": {
+    "sr": 217.39,
+    "avg": 25.0,
+    "balls": 23,
+    "outs": 2
+   },
+   "low_pressure": {
+    "sr": 122.5,
+    "avg": 29.4,
+    "balls": 120,
+    "outs": 5
+   },
+   "delta_sr_raw": 50.56,
+   "delta_sr": 19.38,
+   "delta_avg_raw": -11.89,
+   "delta_avg": -2.97,
+   "confidence": 0.38
+  },
+  {
+   "name": "Yuvraj Singh",
+   "chase_balls": 1029,
+   "chase_innings": 60,
+   "career_matches": 129,
+   "career_runs": 2754,
+   "conventional": {
+    "sr": 120.51,
+    "avg": 24.8,
+    "balls": 1029,
+    "outs": 50
+   },
+   "high_pressure": {
+    "sr": 139.52,
+    "avg": 23.59,
+    "balls": 372,
+    "outs": 22
+   },
+   "low_pressure": {
+    "sr": 78.42,
+    "avg": 18.62,
+    "balls": 190,
+    "outs": 8
+   },
+   "delta_sr_raw": 19.01,
+   "delta_sr": 19.01,
+   "delta_avg_raw": -1.21,
+   "delta_avg": -1.21,
+   "confidence": 1.0
+  },
+  {
+   "name": "JP Duminy",
+   "chase_balls": 596,
+   "chase_innings": 28,
+   "career_matches": 79,
+   "career_runs": 2029,
+   "conventional": {
+    "sr": 115.27,
+    "avg": 29.87,
+    "balls": 596,
+    "outs": 23
+   },
+   "high_pressure": {
+    "sr": 134.17,
+    "avg": 20.72,
+    "balls": 278,
+    "outs": 18
+   },
+   "low_pressure": {
+    "sr": 90.83,
+    "avg": 49.5,
+    "balls": 109,
+    "outs": 2
+   },
+   "delta_sr_raw": 18.9,
+   "delta_sr": 18.9,
+   "delta_avg_raw": -9.15,
+   "delta_avg": -9.15,
+   "confidence": 1.0
+  },
+  {
+   "name": "JJ Roy",
+   "chase_balls": 212,
+   "chase_innings": 8,
+   "career_matches": 21,
+   "career_runs": 614,
+   "conventional": {
+    "sr": 161.32,
+    "avg": 48.86,
+    "balls": 212,
+    "outs": 7
+   },
+   "high_pressure": {
+    "sr": 188.1,
+    "avg": 79.0,
+    "balls": 42,
+    "outs": 1
+   },
+   "low_pressure": {
+    "sr": 151.56,
+    "avg": 48.5,
+    "balls": 128,
+    "outs": 4
+   },
+   "delta_sr_raw": 26.78,
+   "delta_sr": 18.75,
+   "delta_avg_raw": 30.14,
+   "delta_avg": 3.77,
+   "confidence": 0.7
+  },
+  {
+   "name": "V Shankar",
+   "chase_balls": 582,
+   "chase_innings": 38,
+   "career_matches": 69,
+   "career_runs": 1233,
+   "conventional": {
+    "sr": 125.26,
+    "avg": 24.3,
+    "balls": 582,
+    "outs": 30
+   },
+   "high_pressure": {
+    "sr": 143.68,
+    "avg": 15.17,
+    "balls": 190,
+    "outs": 18
+   },
+   "low_pressure": {
+    "sr": 88.89,
+    "avg": 34.67,
+    "balls": 117,
+    "outs": 3
+   },
+   "delta_sr_raw": 18.42,
+   "delta_sr": 18.42,
+   "delta_avg_raw": -9.13,
+   "delta_avg": -9.13,
+   "confidence": 1.0
+  },
+  {
+   "name": "JC Buttler",
+   "chase_balls": 1542,
+   "chase_innings": 74,
+   "career_matches": 136,
+   "career_runs": 4647,
+   "conventional": {
+    "sr": 156.29,
+    "avg": 39.51,
+    "balls": 1542,
+    "outs": 61
+   },
+   "high_pressure": {
+    "sr": 174.65,
+    "avg": 46.5,
+    "balls": 213,
+    "outs": 8
+   },
+   "low_pressure": {
+    "sr": 149.8,
+    "avg": 43.62,
+    "balls": 757,
+    "outs": 26
+   },
+   "delta_sr_raw": 18.36,
+   "delta_sr": 18.36,
+   "delta_avg_raw": 6.99,
+   "delta_avg": 6.99,
+   "confidence": 1.0
+  },
+  {
+   "name": "DJ Mitchell",
+   "chase_balls": 116,
+   "chase_innings": 6,
+   "career_matches": 15,
+   "career_runs": 351,
+   "conventional": {
+    "sr": 146.55,
+    "avg": 28.33,
+    "balls": 116,
+    "outs": 6
+   },
+   "high_pressure": {
+    "sr": 165.52,
+    "avg": 48.0,
+    "balls": 58,
+    "outs": 2
+   },
+   "low_pressure": {
+    "sr": 136.0,
+    "avg": 34.0,
+    "balls": 50,
+    "outs": 2
+   },
+   "delta_sr_raw": 18.97,
+   "delta_sr": 18.34,
+   "delta_avg_raw": 19.67,
+   "delta_avg": 4.92,
+   "confidence": 0.97
+  },
+  {
+   "name": "JH Kallis",
+   "chase_balls": 1392,
+   "chase_innings": 57,
+   "career_matches": 98,
+   "career_runs": 2427,
+   "conventional": {
+    "sr": 107.26,
+    "avg": 31.77,
+    "balls": 1392,
+    "outs": 47
+   },
+   "high_pressure": {
+    "sr": 125.37,
+    "avg": 25.7,
+    "balls": 205,
+    "outs": 10
+   },
+   "low_pressure": {
+    "sr": 99.51,
+    "avg": 38.38,
+    "balls": 617,
+    "outs": 16
+   },
+   "delta_sr_raw": 18.11,
+   "delta_sr": 18.11,
+   "delta_avg_raw": -6.07,
+   "delta_avg": -6.07,
+   "confidence": 1.0
+  },
+  {
+   "name": "RM Patidar",
+   "chase_balls": 340,
+   "chase_innings": 23,
+   "career_matches": 52,
+   "career_runs": 1612,
+   "conventional": {
+    "sr": 149.12,
+    "avg": 23.05,
+    "balls": 340,
+    "outs": 22
+   },
+   "high_pressure": {
+    "sr": 166.22,
+    "avg": 24.6,
+    "balls": 74,
+    "outs": 5
+   },
+   "low_pressure": {
+    "sr": 148.72,
+    "avg": 29.0,
+    "balls": 117,
+    "outs": 6
+   },
+   "delta_sr_raw": 17.1,
+   "delta_sr": 17.1,
+   "delta_avg_raw": 1.55,
+   "delta_avg": 0.97,
+   "confidence": 1.0
+  },
+  {
+   "name": "SS Tiwary",
+   "chase_balls": 580,
+   "chase_innings": 34,
+   "career_matches": 73,
+   "career_runs": 1494,
+   "conventional": {
+    "sr": 108.62,
+    "avg": 26.25,
+    "balls": 580,
+    "outs": 24
+   },
+   "high_pressure": {
+    "sr": 125.6,
+    "avg": 22.21,
+    "balls": 336,
+    "outs": 19
+   },
+   "low_pressure": {
+    "sr": 44.12,
+    "avg": 15.0,
+    "balls": 34,
+    "outs": 1
+   },
+   "delta_sr_raw": 16.98,
+   "delta_sr": 16.98,
+   "delta_avg_raw": -4.04,
+   "delta_avg": -4.04,
+   "confidence": 1.0
+  },
+  {
+   "name": "HH Gibbs",
+   "chase_balls": 402,
+   "chase_innings": 18,
+   "career_matches": 36,
+   "career_runs": 886,
+   "conventional": {
+    "sr": 102.99,
+    "avg": 25.88,
+    "balls": 402,
+    "outs": 16
+   },
+   "high_pressure": {
+    "sr": 134.38,
+    "avg": 14.33,
+    "balls": 32,
+    "outs": 3
+   },
+   "low_pressure": {
+    "sr": 102.83,
+    "avg": 63.5,
+    "balls": 247,
+    "outs": 4
+   },
+   "delta_sr_raw": 31.39,
+   "delta_sr": 16.74,
+   "delta_avg_raw": -11.55,
+   "delta_avg": -4.33,
+   "confidence": 0.53
+  },
+  {
+   "name": "KM Jadhav",
+   "chase_balls": 526,
+   "chase_innings": 40,
+   "career_matches": 81,
+   "career_runs": 1208,
+   "conventional": {
+    "sr": 111.79,
+    "avg": 20.28,
+    "balls": 526,
+    "outs": 29
+   },
+   "high_pressure": {
+    "sr": 128.47,
+    "avg": 20.06,
+    "balls": 281,
+    "outs": 18
+   },
+   "low_pressure": {
+    "sr": 81.82,
+    "avg": 18.0,
+    "balls": 44,
+    "outs": 2
+   },
+   "delta_sr_raw": 16.68,
+   "delta_sr": 16.68,
+   "delta_avg_raw": -0.22,
+   "delta_avg": -0.22,
+   "confidence": 1.0
+  },
+  {
+   "name": "SA Asnodkar",
+   "chase_balls": 142,
+   "chase_innings": 11,
+   "career_matches": 19,
+   "career_runs": 423,
+   "conventional": {
+    "sr": 111.97,
+    "avg": 13.25,
+    "balls": 142,
+    "outs": 12
+   },
+   "high_pressure": {
+    "sr": 150.0,
+    "avg": 19.5,
+    "balls": 26,
+    "outs": 2
+   },
+   "low_pressure": {
+    "sr": 106.94,
+    "avg": 15.4,
+    "balls": 72,
+    "outs": 5
+   },
+   "delta_sr_raw": 38.03,
+   "delta_sr": 16.48,
+   "delta_avg_raw": 6.25,
+   "delta_avg": 1.56,
+   "confidence": 0.43
+  },
+  {
+   "name": "Y Venugopal Rao",
+   "chase_balls": 376,
+   "chase_innings": 24,
+   "career_matches": 57,
+   "career_runs": 985,
+   "conventional": {
+    "sr": 123.4,
+    "avg": 23.2,
+    "balls": 376,
+    "outs": 20
+   },
+   "high_pressure": {
+    "sr": 139.68,
+    "avg": 20.29,
+    "balls": 247,
+    "outs": 17
+   },
+   "low_pressure": {
+    "sr": 96.15,
+    "avg": 25.0,
+    "balls": 26,
+    "outs": 1
+   },
+   "delta_sr_raw": 16.28,
+   "delta_sr": 16.28,
+   "delta_avg_raw": -2.91,
+   "delta_avg": -2.91,
+   "confidence": 1.0
+  },
+  {
+   "name": "B Chipli",
+   "chase_balls": 112,
+   "chase_innings": 8,
+   "career_matches": 21,
+   "career_runs": 280,
+   "conventional": {
+    "sr": 108.93,
+    "avg": 20.33,
+    "balls": 112,
+    "outs": 6
+   },
+   "high_pressure": {
+    "sr": 134.21,
+    "avg": 25.5,
+    "balls": 38,
+    "outs": 2
+   },
+   "low_pressure": {
+    "sr": 87.5,
+    "avg": null,
+    "balls": 32,
+    "outs": 0
+   },
+   "delta_sr_raw": 25.28,
+   "delta_sr": 16.01,
+   "delta_avg_raw": 5.17,
+   "delta_avg": 1.29,
+   "confidence": 0.63
+  },
+  {
+   "name": "KH Pandya",
+   "chase_balls": 702,
+   "chase_innings": 50,
+   "career_matches": 158,
+   "career_runs": 1982,
+   "conventional": {
+    "sr": 137.18,
+    "avg": 25.34,
+    "balls": 702,
+    "outs": 38
+   },
+   "high_pressure": {
+    "sr": 153.15,
+    "avg": 25.5,
+    "balls": 333,
+    "outs": 20
+   },
+   "low_pressure": {
+    "sr": 111.36,
+    "avg": 32.67,
+    "balls": 88,
+    "outs": 3
+   },
+   "delta_sr_raw": 15.97,
+   "delta_sr": 15.97,
+   "delta_avg_raw": 0.16,
+   "delta_avg": 0.16,
+   "confidence": 1.0
+  },
+  {
+   "name": "NV Ojha",
+   "chase_balls": 621,
+   "chase_innings": 44,
+   "career_matches": 94,
+   "career_runs": 1554,
+   "conventional": {
+    "sr": 116.75,
+    "avg": 22.66,
+    "balls": 621,
+    "outs": 32
+   },
+   "high_pressure": {
+    "sr": 132.67,
+    "avg": 22.11,
+    "balls": 150,
+    "outs": 9
+   },
+   "low_pressure": {
+    "sr": 102.16,
+    "avg": 23.6,
+    "balls": 231,
+    "outs": 10
+   },
+   "delta_sr_raw": 15.92,
+   "delta_sr": 15.92,
+   "delta_avg_raw": -0.55,
+   "delta_avg": -0.55,
+   "confidence": 1.0
+  },
+  {
+   "name": "E Lewis",
+   "chase_balls": 166,
+   "chase_innings": 9,
+   "career_matches": 26,
+   "career_runs": 654,
+   "conventional": {
+    "sr": 128.92,
+    "avg": 30.57,
+    "balls": 166,
+    "outs": 7
+   },
+   "high_pressure": {
+    "sr": 154.05,
+    "avg": 28.5,
+    "balls": 37,
+    "outs": 2
+   },
+   "low_pressure": {
+    "sr": 113.7,
+    "avg": 27.67,
+    "balls": 73,
+    "outs": 3
+   },
+   "delta_sr_raw": 25.13,
+   "delta_sr": 15.5,
+   "delta_avg_raw": -2.07,
+   "delta_avg": -0.52,
+   "confidence": 0.62
+  },
+  {
+   "name": "MK Tiwary",
+   "chase_balls": 714,
+   "chase_innings": 41,
+   "career_matches": 85,
+   "career_runs": 1695,
+   "conventional": {
+    "sr": 112.75,
+    "avg": 25.16,
+    "balls": 714,
+    "outs": 32
+   },
+   "high_pressure": {
+    "sr": 128.2,
+    "avg": 22.73,
+    "balls": 266,
+    "outs": 15
+   },
+   "low_pressure": {
+    "sr": 106.34,
+    "avg": 27.25,
+    "balls": 205,
+    "outs": 8
+   },
+   "delta_sr_raw": 15.45,
+   "delta_sr": 15.45,
+   "delta_avg_raw": -2.43,
+   "delta_avg": -2.43,
+   "confidence": 1.0
+  },
+  {
+   "name": "A Badoni",
+   "chase_balls": 325,
+   "chase_innings": 25,
+   "career_matches": 58,
+   "career_runs": 1178,
+   "conventional": {
+    "sr": 134.77,
+    "avg": 19.91,
+    "balls": 325,
+    "outs": 22
+   },
+   "high_pressure": {
+    "sr": 149.74,
+    "avg": 20.86,
+    "balls": 195,
+    "outs": 14
+   },
+   "low_pressure": {
+    "sr": 128.95,
+    "avg": 16.33,
+    "balls": 38,
+    "outs": 3
+   },
+   "delta_sr_raw": 14.97,
+   "delta_sr": 14.97,
+   "delta_avg_raw": 0.95,
+   "delta_avg": 0.95,
+   "confidence": 1.0
+  },
+  {
+   "name": "SK Raina",
+   "chase_balls": 1688,
+   "chase_innings": 91,
+   "career_matches": 200,
+   "career_runs": 5536,
+   "conventional": {
+    "sr": 138.27,
+    "avg": 32.87,
+    "balls": 1688,
+    "outs": 71
+   },
+   "high_pressure": {
+    "sr": 153.11,
+    "avg": 41.0,
+    "balls": 241,
+    "outs": 9
+   },
+   "low_pressure": {
+    "sr": 131.66,
+    "avg": 36.54,
+    "balls": 777,
+    "outs": 28
+   },
+   "delta_sr_raw": 14.84,
+   "delta_sr": 14.84,
+   "delta_avg_raw": 8.13,
+   "delta_avg": 8.13,
+   "confidence": 1.0
+  },
+  {
+   "name": "IK Pathan",
+   "chase_balls": 465,
+   "chase_innings": 39,
+   "career_matches": 102,
+   "career_runs": 1150,
+   "conventional": {
+    "sr": 124.09,
+    "avg": 20.61,
+    "balls": 465,
+    "outs": 28
+   },
+   "high_pressure": {
+    "sr": 138.8,
+    "avg": 22.0,
+    "balls": 317,
+    "outs": 20
+   },
+   "low_pressure": {
+    "sr": 86.67,
+    "avg": 26.0,
+    "balls": 30,
+    "outs": 1
+   },
+   "delta_sr_raw": 14.71,
+   "delta_sr": 14.71,
+   "delta_avg_raw": 1.39,
+   "delta_avg": 1.39,
+   "confidence": 1.0
+  },
+  {
+   "name": "GJ Maxwell",
+   "chase_balls": 735,
+   "chase_innings": 56,
+   "career_matches": 140,
+   "career_runs": 2820,
+   "conventional": {
+    "sr": 158.37,
+    "avg": 26.45,
+    "balls": 735,
+    "outs": 44
+   },
+   "high_pressure": {
+    "sr": 171.74,
+    "avg": 31.6,
+    "balls": 184,
+    "outs": 10
+   },
+   "low_pressure": {
+    "sr": 146.74,
+    "avg": 30.0,
+    "balls": 184,
+    "outs": 9
+   },
+   "delta_sr_raw": 13.37,
+   "delta_sr": 13.37,
+   "delta_avg_raw": 5.15,
+   "delta_avg": 5.15,
+   "confidence": 1.0
+  },
+  {
+   "name": "Naman Dhir",
+   "chase_balls": 165,
+   "chase_innings": 17,
+   "career_matches": 33,
+   "career_runs": 710,
+   "conventional": {
+    "sr": 172.12,
+    "avg": 21.85,
+    "balls": 165,
+    "outs": 13
+   },
+   "high_pressure": {
+    "sr": 185.0,
+    "avg": 24.67,
+    "balls": 80,
+    "outs": 6
+   },
+   "low_pressure": {
+    "sr": 142.37,
+    "avg": 14.0,
+    "balls": 59,
+    "outs": 6
+   },
+   "delta_sr_raw": 12.88,
+   "delta_sr": 12.88,
+   "delta_avg_raw": 2.82,
+   "delta_avg": 2.11,
+   "confidence": 1.0
+  },
+  {
+   "name": "Ishan Kishan",
+   "chase_balls": 1174,
+   "chase_innings": 60,
+   "career_matches": 127,
+   "career_runs": 3600,
+   "conventional": {
+    "sr": 144.21,
+    "avg": 30.78,
+    "balls": 1174,
+    "outs": 55
+   },
+   "high_pressure": {
+    "sr": 157.0,
+    "avg": 26.17,
+    "balls": 200,
+    "outs": 12
+   },
+   "low_pressure": {
+    "sr": 147.5,
+    "avg": 34.04,
+    "balls": 600,
+    "outs": 26
+   },
+   "delta_sr_raw": 12.79,
+   "delta_sr": 12.79,
+   "delta_avg_raw": -4.61,
+   "delta_avg": -4.61,
+   "confidence": 1.0
+  },
+  {
+   "name": "G Gambhir",
+   "chase_balls": 2048,
+   "chase_innings": 89,
+   "career_matches": 151,
+   "career_runs": 4217,
+   "conventional": {
+    "sr": 120.12,
+    "avg": 33.7,
+    "balls": 2048,
+    "outs": 73
+   },
+   "high_pressure": {
+    "sr": 132.84,
+    "avg": 22.25,
+    "balls": 67,
+    "outs": 4
+   },
+   "low_pressure": {
+    "sr": 114.51,
+    "avg": 35.79,
+    "balls": 1344,
+    "outs": 43
+   },
+   "delta_sr_raw": 12.72,
+   "delta_sr": 12.72,
+   "delta_avg_raw": -11.45,
+   "delta_avg": -5.72,
+   "confidence": 1.0
+  },
+  {
+   "name": "K Goel",
+   "chase_balls": 118,
+   "chase_innings": 8,
+   "career_matches": 16,
+   "career_runs": 218,
+   "conventional": {
+    "sr": 82.2,
+    "avg": 13.86,
+    "balls": 118,
+    "outs": 7
+   },
+   "high_pressure": {
+    "sr": 111.54,
+    "avg": 29.0,
+    "balls": 26,
+    "outs": 1
+   },
+   "low_pressure": {
+    "sr": 58.97,
+    "avg": 23.0,
+    "balls": 39,
+    "outs": 1
+   },
+   "delta_sr_raw": 29.34,
+   "delta_sr": 12.71,
+   "delta_avg_raw": 15.14,
+   "delta_avg": 1.89,
+   "confidence": 0.43
+  },
+  {
+   "name": "S Dube",
+   "chase_balls": 641,
+   "chase_innings": 37,
+   "career_matches": 88,
+   "career_runs": 2129,
+   "conventional": {
+    "sr": 134.17,
+    "avg": 29.66,
+    "balls": 641,
+    "outs": 29
+   },
+   "high_pressure": {
+    "sr": 146.44,
+    "avg": 24.0,
+    "balls": 295,
+    "outs": 18
+   },
+   "low_pressure": {
+    "sr": 127.14,
+    "avg": 44.5,
+    "balls": 70,
+    "outs": 2
+   },
+   "delta_sr_raw": 12.27,
+   "delta_sr": 12.27,
+   "delta_avg_raw": -5.66,
+   "delta_avg": -5.66,
+   "confidence": 1.0
+  },
+  {
+   "name": "LS Livingstone",
+   "chase_balls": 245,
+   "chase_innings": 20,
+   "career_matches": 50,
+   "career_runs": 1066,
+   "conventional": {
+    "sr": 172.65,
+    "avg": 30.21,
+    "balls": 245,
+    "outs": 14
+   },
+   "high_pressure": {
+    "sr": 184.82,
+    "avg": 51.75,
+    "balls": 112,
+    "outs": 4
+   },
+   "low_pressure": {
+    "sr": 163.04,
+    "avg": 18.75,
+    "balls": 46,
+    "outs": 4
+   },
+   "delta_sr_raw": 12.17,
+   "delta_sr": 12.17,
+   "delta_avg_raw": 21.54,
+   "delta_avg": 10.77,
+   "confidence": 1.0
+  },
+  {
+   "name": "M Shahrukh Khan",
+   "chase_balls": 192,
+   "chase_innings": 22,
+   "career_matches": 53,
+   "career_runs": 775,
+   "conventional": {
+    "sr": 157.81,
+    "avg": 18.94,
+    "balls": 192,
+    "outs": 16
+   },
+   "high_pressure": {
+    "sr": 169.93,
+    "avg": 20.0,
+    "balls": 153,
+    "outs": 13
+   },
+   "low_pressure": {
+    "sr": 130.77,
+    "avg": 17.0,
+    "balls": 26,
+    "outs": 2
+   },
+   "delta_sr_raw": 12.12,
+   "delta_sr": 12.12,
+   "delta_avg_raw": 1.06,
+   "delta_avg": 1.06,
+   "confidence": 1.0
+  },
+  {
+   "name": "KL Rahul",
+   "chase_balls": 2064,
+   "chase_innings": 72,
+   "career_matches": 149,
+   "career_runs": 5828,
+   "conventional": {
+    "sr": 139.92,
+    "avg": 47.34,
+    "balls": 2064,
+    "outs": 61
+   },
+   "high_pressure": {
+    "sr": 151.74,
+    "avg": 34.8,
+    "balls": 344,
+    "outs": 15
+   },
+   "low_pressure": {
+    "sr": 141.59,
+    "avg": 64.68,
+    "balls": 868,
+    "outs": 19
+   },
+   "delta_sr_raw": 11.82,
+   "delta_sr": 11.82,
+   "delta_avg_raw": -12.54,
+   "delta_avg": -12.54,
+   "confidence": 1.0
+  },
+  {
+   "name": "ML Hayden",
+   "chase_balls": 356,
+   "chase_innings": 13,
+   "career_matches": 32,
+   "career_runs": 1107,
+   "conventional": {
+    "sr": 137.64,
+    "avg": 44.55,
+    "balls": 356,
+    "outs": 11
+   },
+   "high_pressure": {
+    "sr": 153.33,
+    "avg": 69.0,
+    "balls": 45,
+    "outs": 1
+   },
+   "low_pressure": {
+    "sr": 142.77,
+    "avg": 49.4,
+    "balls": 173,
+    "outs": 5
+   },
+   "delta_sr_raw": 15.69,
+   "delta_sr": 11.77,
+   "delta_avg_raw": 24.45,
+   "delta_avg": 3.06,
+   "confidence": 0.75
+  },
+  {
+   "name": "S Badrinath",
+   "chase_balls": 453,
+   "chase_innings": 25,
+   "career_matches": 65,
+   "career_runs": 1441,
+   "conventional": {
+    "sr": 117.66,
+    "avg": 25.38,
+    "balls": 453,
+    "outs": 21
+   },
+   "high_pressure": {
+    "sr": 128.97,
+    "avg": 15.58,
+    "balls": 145,
+    "outs": 12
+   },
+   "low_pressure": {
+    "sr": 110.81,
+    "avg": 27.33,
+    "balls": 74,
+    "outs": 3
+   },
+   "delta_sr_raw": 11.31,
+   "delta_sr": 11.31,
+   "delta_avg_raw": -9.8,
+   "delta_avg": -9.8,
+   "confidence": 1.0
+  },
+  {
+   "name": "RR Pant",
+   "chase_balls": 1280,
+   "chase_innings": 66,
+   "career_matches": 136,
+   "career_runs": 3879,
+   "conventional": {
+    "sr": 143.75,
+    "avg": 33.45,
+    "balls": 1280,
+    "outs": 55
+   },
+   "high_pressure": {
+    "sr": 155.01,
+    "avg": 27.24,
+    "balls": 369,
+    "outs": 21
+   },
+   "low_pressure": {
+    "sr": 135.18,
+    "avg": 40.67,
+    "balls": 361,
+    "outs": 12
+   },
+   "delta_sr_raw": 11.26,
+   "delta_sr": 11.26,
+   "delta_avg_raw": -6.21,
+   "delta_avg": -6.21,
+   "confidence": 1.0
+  },
+  {
+   "name": "MA Agarwal",
+   "chase_balls": 1075,
+   "chase_innings": 62,
+   "career_matches": 125,
+   "career_runs": 2764,
+   "conventional": {
+    "sr": 135.63,
+    "avg": 24.71,
+    "balls": 1075,
+    "outs": 59
+   },
+   "high_pressure": {
+    "sr": 146.55,
+    "avg": 31.88,
+    "balls": 174,
+    "outs": 8
+   },
+   "low_pressure": {
+    "sr": 128.21,
+    "avg": 23.33,
+    "balls": 546,
+    "outs": 30
+   },
+   "delta_sr_raw": 10.92,
+   "delta_sr": 10.92,
+   "delta_avg_raw": 7.17,
+   "delta_avg": 7.17,
+   "confidence": 1.0
+  },
+  {
+   "name": "Shashank Singh",
+   "chase_balls": 346,
+   "chase_innings": 25,
+   "career_matches": 45,
+   "career_runs": 905,
+   "conventional": {
+    "sr": 164.16,
+    "avg": 37.87,
+    "balls": 346,
+    "outs": 15
+   },
+   "high_pressure": {
+    "sr": 174.26,
+    "avg": 39.11,
+    "balls": 202,
+    "outs": 9
+   },
+   "low_pressure": {
+    "sr": 104.0,
+    "avg": 13.0,
+    "balls": 25,
+    "outs": 2
+   },
+   "delta_sr_raw": 10.1,
+   "delta_sr": 10.1,
+   "delta_avg_raw": 1.24,
+   "delta_avg": 1.24,
+   "confidence": 1.0
+  },
+  {
+   "name": "B Sai Sudharsan",
+   "chase_balls": 834,
+   "chase_innings": 31,
+   "career_matches": 57,
+   "career_runs": 2515,
+   "conventional": {
+    "sr": 146.28,
+    "avg": 43.57,
+    "balls": 834,
+    "outs": 28
+   },
+   "high_pressure": {
+    "sr": 156.25,
+    "avg": 29.17,
+    "balls": 112,
+    "outs": 6
+   },
+   "low_pressure": {
+    "sr": 136.32,
+    "avg": 57.8,
+    "balls": 424,
+    "outs": 10
+   },
+   "delta_sr_raw": 9.97,
+   "delta_sr": 9.97,
+   "delta_avg_raw": -14.4,
+   "delta_avg": -10.8,
+   "confidence": 1.0
+  },
+  {
+   "name": "KA Pollard",
+   "chase_balls": 1025,
+   "chase_innings": 72,
+   "career_matches": 179,
+   "career_runs": 3437,
+   "conventional": {
+    "sr": 151.22,
+    "avg": 29.81,
+    "balls": 1025,
+    "outs": 52
+   },
+   "high_pressure": {
+    "sr": 161.09,
+    "avg": 34.5,
+    "balls": 771,
+    "outs": 36
+   },
+   "low_pressure": {
+    "sr": 157.14,
+    "avg": 16.5,
+    "balls": 21,
+    "outs": 2
+   },
+   "delta_sr_raw": 9.87,
+   "delta_sr": 9.87,
+   "delta_avg_raw": 4.69,
+   "delta_avg": 4.69,
+   "confidence": 1.0
+  },
+  {
+   "name": "DP Conway",
+   "chase_balls": 284,
+   "chase_innings": 10,
+   "career_matches": 28,
+   "career_runs": 1080,
+   "conventional": {
+    "sr": 128.17,
+    "avg": 40.44,
+    "balls": 284,
+    "outs": 9
+   },
+   "high_pressure": {
+    "sr": 142.5,
+    "avg": 14.25,
+    "balls": 40,
+    "outs": 4
+   },
+   "low_pressure": {
+    "sr": 126.87,
+    "avg": 85.0,
+    "balls": 134,
+    "outs": 2
+   },
+   "delta_sr_raw": 14.33,
+   "delta_sr": 9.55,
+   "delta_avg_raw": -26.19,
+   "delta_avg": -13.1,
+   "confidence": 0.67
+  },
+  {
+   "name": "SO Hetmyer",
+   "chase_balls": 483,
+   "chase_innings": 39,
+   "career_matches": 85,
+   "career_runs": 1566,
+   "conventional": {
+    "sr": 161.28,
+    "avg": 28.85,
+    "balls": 483,
+    "outs": 27
+   },
+   "high_pressure": {
+    "sr": 170.79,
+    "avg": 28.32,
+    "balls": 315,
+    "outs": 19
+   },
+   "low_pressure": {
+    "sr": 95.83,
+    "avg": 11.5,
+    "balls": 24,
+    "outs": 2
+   },
+   "delta_sr_raw": 9.51,
+   "delta_sr": 9.51,
+   "delta_avg_raw": -0.53,
+   "delta_avg": -0.53,
+   "confidence": 1.0
+  },
+  {
+   "name": "HH Pandya",
+   "chase_balls": 846,
+   "chase_innings": 70,
+   "career_matches": 159,
+   "career_runs": 2964,
+   "conventional": {
+    "sr": 147.52,
+    "avg": 25.47,
+    "balls": 846,
+    "outs": 49
+   },
+   "high_pressure": {
+    "sr": 156.87,
+    "avg": 21.82,
+    "balls": 473,
+    "outs": 34
+   },
+   "low_pressure": {
+    "sr": 121.74,
+    "avg": 56.0,
+    "balls": 92,
+    "outs": 2
+   },
+   "delta_sr_raw": 9.35,
+   "delta_sr": 9.35,
+   "delta_avg_raw": -3.65,
+   "delta_avg": -3.65,
+   "confidence": 1.0
+  },
+  {
+   "name": "KK Nair",
+   "chase_balls": 665,
+   "chase_innings": 39,
+   "career_matches": 78,
+   "career_runs": 1712,
+   "conventional": {
+    "sr": 135.19,
+    "avg": 25.69,
+    "balls": 665,
+    "outs": 35
+   },
+   "high_pressure": {
+    "sr": 144.3,
+    "avg": 14.25,
+    "balls": 79,
+    "outs": 8
+   },
+   "low_pressure": {
+    "sr": 143.49,
+    "avg": 25.73,
+    "balls": 269,
+    "outs": 15
+   },
+   "delta_sr_raw": 9.11,
+   "delta_sr": 9.11,
+   "delta_avg_raw": -11.44,
+   "delta_avg": -11.44,
+   "confidence": 1.0
+  },
+  {
+   "name": "EJG Morgan",
+   "chase_balls": 565,
+   "chase_innings": 35,
+   "career_matches": 74,
+   "career_runs": 1406,
+   "conventional": {
+    "sr": 119.12,
+    "avg": 24.93,
+    "balls": 565,
+    "outs": 27
+   },
+   "high_pressure": {
+    "sr": 128.1,
+    "avg": 20.67,
+    "balls": 242,
+    "outs": 15
+   },
+   "low_pressure": {
+    "sr": 111.54,
+    "avg": 58.0,
+    "balls": 104,
+    "outs": 2
+   },
+   "delta_sr_raw": 8.98,
+   "delta_sr": 8.98,
+   "delta_avg_raw": -4.26,
+   "delta_avg": -4.26,
+   "confidence": 1.0
+  },
+  {
+   "name": "Nithish Kumar Reddy",
+   "chase_balls": 167,
+   "chase_innings": 13,
+   "career_matches": 39,
+   "career_runs": 787,
+   "conventional": {
+    "sr": 150.3,
+    "avg": 27.89,
+    "balls": 167,
+    "outs": 9
+   },
+   "high_pressure": {
+    "sr": 161.7,
+    "avg": 25.33,
+    "balls": 47,
+    "outs": 3
+   },
+   "low_pressure": {
+    "sr": 106.25,
+    "avg": null,
+    "balls": 32,
+    "outs": 0
+   },
+   "delta_sr_raw": 11.4,
+   "delta_sr": 8.93,
+   "delta_avg_raw": -2.56,
+   "delta_avg": -0.96,
+   "confidence": 0.78
+  },
+  {
+   "name": "AK Markram",
+   "chase_balls": 605,
+   "chase_innings": 32,
+   "career_matches": 67,
+   "career_runs": 1671,
+   "conventional": {
+    "sr": 136.53,
+    "avg": 31.77,
+    "balls": 605,
+    "outs": 26
+   },
+   "high_pressure": {
+    "sr": 145.35,
+    "avg": 25.0,
+    "balls": 172,
+    "outs": 10
+   },
+   "low_pressure": {
+    "sr": 139.33,
+    "avg": 52.25,
+    "balls": 150,
+    "outs": 4
+   },
+   "delta_sr_raw": 8.82,
+   "delta_sr": 8.82,
+   "delta_avg_raw": -6.77,
+   "delta_avg": -6.77,
+   "confidence": 1.0
+  },
+  {
+   "name": "MP Stoinis",
+   "chase_balls": 653,
+   "chase_innings": 46,
+   "career_matches": 118,
+   "career_runs": 2242,
+   "conventional": {
+    "sr": 148.85,
+    "avg": 32.4,
+    "balls": 653,
+    "outs": 30
+   },
+   "high_pressure": {
+    "sr": 157.61,
+    "avg": 33.26,
+    "balls": 401,
+    "outs": 19
+   },
+   "low_pressure": {
+    "sr": 114.29,
+    "avg": null,
+    "balls": 56,
+    "outs": 0
+   },
+   "delta_sr_raw": 8.76,
+   "delta_sr": 8.76,
+   "delta_avg_raw": 0.86,
+   "delta_avg": 0.86,
+   "confidence": 1.0
+  },
+  {
+   "name": "V Kohli",
+   "chase_balls": 3194,
+   "chase_innings": 133,
+   "career_matches": 276,
+   "career_runs": 9346,
+   "conventional": {
+    "sr": 136.98,
+    "avg": 42.89,
+    "balls": 3194,
+    "outs": 102
+   },
+   "high_pressure": {
+    "sr": 144.92,
+    "avg": 25.91,
+    "balls": 590,
+    "outs": 33
+   },
+   "low_pressure": {
+    "sr": 132.92,
+    "avg": 60.31,
+    "balls": 1452,
+    "outs": 32
+   },
+   "delta_sr_raw": 7.94,
+   "delta_sr": 7.94,
+   "delta_avg_raw": -16.98,
+   "delta_avg": -16.98,
+   "confidence": 1.0
+  },
+  {
+   "name": "SA Yadav",
+   "chase_balls": 1439,
+   "chase_innings": 79,
+   "career_matches": 165,
+   "career_runs": 4581,
+   "conventional": {
+    "sr": 153.09,
+    "avg": 34.42,
+    "balls": 1439,
+    "outs": 64
+   },
+   "high_pressure": {
+    "sr": 161.02,
+    "avg": 20.36,
+    "balls": 354,
+    "outs": 28
+   },
+   "low_pressure": {
+    "sr": 134.04,
+    "avg": 56.7,
+    "balls": 423,
+    "outs": 10
+   },
+   "delta_sr_raw": 7.93,
+   "delta_sr": 7.93,
+   "delta_avg_raw": -14.06,
+   "delta_avg": -14.06,
+   "confidence": 1.0
+  },
+  {
+   "name": "DPMD Jayawardene",
+   "chase_balls": 833,
+   "chase_innings": 43,
+   "career_matches": 78,
+   "career_runs": 1808,
+   "conventional": {
+    "sr": 125.09,
+    "avg": 32.56,
+    "balls": 833,
+    "outs": 32
+   },
+   "high_pressure": {
+    "sr": 132.88,
+    "avg": 26.45,
+    "balls": 219,
+    "outs": 11
+   },
+   "low_pressure": {
+    "sr": 130.14,
+    "avg": 38.0,
+    "balls": 292,
+    "outs": 10
+   },
+   "delta_sr_raw": 7.79,
+   "delta_sr": 7.79,
+   "delta_avg_raw": -6.11,
+   "delta_avg": -6.11,
+   "confidence": 1.0
+  },
+  {
+   "name": "F du Plessis",
+   "chase_balls": 1619,
+   "chase_innings": 71,
+   "career_matches": 147,
+   "career_runs": 4773,
+   "conventional": {
+    "sr": 137.31,
+    "avg": 34.2,
+    "balls": 1619,
+    "outs": 65
+   },
+   "high_pressure": {
+    "sr": 144.96,
+    "avg": 34.5,
+    "balls": 238,
+    "outs": 10
+   },
+   "low_pressure": {
+    "sr": 137.8,
+    "avg": 43.07,
+    "balls": 844,
+    "outs": 27
+   },
+   "delta_sr_raw": 7.65,
+   "delta_sr": 7.65,
+   "delta_avg_raw": 0.3,
+   "delta_avg": 0.3,
+   "confidence": 1.0
+  },
+  {
+   "name": "MM Ali",
+   "chase_balls": 274,
+   "chase_innings": 21,
+   "career_matches": 69,
+   "career_runs": 1167,
+   "conventional": {
+    "sr": 119.71,
+    "avg": 16.4,
+    "balls": 274,
+    "outs": 20
+   },
+   "high_pressure": {
+    "sr": 127.36,
+    "avg": 15.0,
+    "balls": 106,
+    "outs": 9
+   },
+   "low_pressure": {
+    "sr": 129.11,
+    "avg": 25.5,
+    "balls": 79,
+    "outs": 4
+   },
+   "delta_sr_raw": 7.65,
+   "delta_sr": 7.65,
+   "delta_avg_raw": -1.4,
+   "delta_avg": -1.4,
+   "confidence": 1.0
+  },
+  {
+   "name": "MD Mishra",
+   "chase_balls": 124,
+   "chase_innings": 10,
+   "career_matches": 17,
+   "career_runs": 237,
+   "conventional": {
+    "sr": 120.16,
+    "avg": 16.56,
+    "balls": 124,
+    "outs": 9
+   },
+   "high_pressure": {
+    "sr": 137.04,
+    "avg": 18.5,
+    "balls": 27,
+    "outs": 2
+   },
+   "low_pressure": {
+    "sr": 120.9,
+    "avg": 13.5,
+    "balls": 67,
+    "outs": 6
+   },
+   "delta_sr_raw": 16.88,
+   "delta_sr": 7.6,
+   "delta_avg_raw": 1.94,
+   "delta_avg": 0.48,
+   "confidence": 0.45
+  },
+  {
+   "name": "MC Henriques",
+   "chase_balls": 232,
+   "chase_innings": 16,
+   "career_matches": 62,
+   "career_runs": 1000,
+   "conventional": {
+    "sr": 116.81,
+    "avg": 24.64,
+    "balls": 232,
+    "outs": 11
+   },
+   "high_pressure": {
+    "sr": 125.49,
+    "avg": 12.8,
+    "balls": 51,
+    "outs": 5
+   },
+   "low_pressure": {
+    "sr": 112.87,
+    "avg": 38.0,
+    "balls": 101,
+    "outs": 3
+   },
+   "delta_sr_raw": 8.68,
+   "delta_sr": 7.38,
+   "delta_avg_raw": -11.84,
+   "delta_avg": -7.4,
+   "confidence": 0.85
+  },
+  {
+   "name": "A Raghuvanshi",
+   "chase_balls": 203,
+   "chase_innings": 11,
+   "career_matches": 30,
+   "career_runs": 885,
+   "conventional": {
+    "sr": 128.57,
+    "avg": 29.0,
+    "balls": 203,
+    "outs": 9
+   },
+   "high_pressure": {
+    "sr": 140.54,
+    "avg": 52.0,
+    "balls": 37,
+    "outs": 1
+   },
+   "low_pressure": {
+    "sr": 128.97,
+    "avg": 34.5,
+    "balls": 107,
+    "outs": 4
+   },
+   "delta_sr_raw": 11.97,
+   "delta_sr": 7.38,
+   "delta_avg_raw": 23.0,
+   "delta_avg": 2.88,
+   "confidence": 0.62
+  },
+  {
+   "name": "RA Jadeja",
+   "chase_balls": 1211,
+   "chase_innings": 97,
+   "career_matches": 259,
+   "career_runs": 3526,
+   "conventional": {
+    "sr": 130.88,
+    "avg": 28.3,
+    "balls": 1211,
+    "outs": 56
+   },
+   "high_pressure": {
+    "sr": 138.13,
+    "avg": 26.59,
+    "balls": 847,
+    "outs": 44
+   },
+   "low_pressure": {
+    "sr": 141.46,
+    "avg": 58.0,
+    "balls": 41,
+    "outs": 1
+   },
+   "delta_sr_raw": 7.25,
+   "delta_sr": 7.25,
+   "delta_avg_raw": -1.71,
+   "delta_avg": -1.71,
+   "confidence": 1.0
+  },
+  {
+   "name": "DR Smith",
+   "chase_balls": 866,
+   "chase_innings": 42,
+   "career_matches": 91,
+   "career_runs": 2385,
+   "conventional": {
+    "sr": 147.81,
+    "avg": 33.68,
+    "balls": 866,
+    "outs": 38
+   },
+   "high_pressure": {
+    "sr": 154.93,
+    "avg": 22.0,
+    "balls": 142,
+    "outs": 10
+   },
+   "low_pressure": {
+    "sr": 153.06,
+    "avg": 41.67,
+    "balls": 490,
+    "outs": 18
+   },
+   "delta_sr_raw": 7.12,
+   "delta_sr": 7.12,
+   "delta_avg_raw": -11.68,
+   "delta_avg": -11.68,
+   "confidence": 1.0
+  },
+  {
+   "name": "N Pooran",
+   "chase_balls": 748,
+   "chase_innings": 48,
+   "career_matches": 100,
+   "career_runs": 2527,
+   "conventional": {
+    "sr": 167.11,
+    "avg": 35.71,
+    "balls": 748,
+    "outs": 35
+   },
+   "high_pressure": {
+    "sr": 174.02,
+    "avg": 25.74,
+    "balls": 281,
+    "outs": 19
+   },
+   "low_pressure": {
+    "sr": 198.86,
+    "avg": 87.5,
+    "balls": 88,
+    "outs": 2
+   },
+   "delta_sr_raw": 6.91,
+   "delta_sr": 6.91,
+   "delta_avg_raw": -9.97,
+   "delta_avg": -9.97,
+   "confidence": 1.0
+  },
+  {
+   "name": "CM Gautam",
+   "chase_balls": 80,
+   "chase_innings": 7,
+   "career_matches": 13,
+   "career_runs": 169,
+   "conventional": {
+    "sr": 113.75,
+    "avg": 18.2,
+    "balls": 80,
+    "outs": 5
+   },
+   "high_pressure": {
+    "sr": 123.26,
+    "avg": 26.5,
+    "balls": 43,
+    "outs": 2
+   },
+   "low_pressure": {
+    "sr": 92.59,
+    "avg": 25.0,
+    "balls": 27,
+    "outs": 1
+   },
+   "delta_sr_raw": 9.51,
+   "delta_sr": 6.82,
+   "delta_avg_raw": 8.3,
+   "delta_avg": 2.08,
+   "confidence": 0.72
+  },
+  {
+   "name": "V Sehwag",
+   "chase_balls": 875,
+   "chase_innings": 55,
+   "career_matches": 104,
+   "career_runs": 2728,
+   "conventional": {
+    "sr": 163.09,
+    "avg": 27.98,
+    "balls": 875,
+    "outs": 51
+   },
+   "high_pressure": {
+    "sr": 171.43,
+    "avg": 16.8,
+    "balls": 49,
+    "outs": 5
+   },
+   "low_pressure": {
+    "sr": 158.23,
+    "avg": 30.43,
+    "balls": 577,
+    "outs": 30
+   },
+   "delta_sr_raw": 8.34,
+   "delta_sr": 6.81,
+   "delta_avg_raw": -11.18,
+   "delta_avg": -6.99,
+   "confidence": 0.82
+  },
+  {
+   "name": "YK Pathan",
+   "chase_balls": 1237,
+   "chase_innings": 80,
+   "career_matches": 161,
+   "career_runs": 3222,
+   "conventional": {
+    "sr": 151.9,
+    "avg": 32.96,
+    "balls": 1237,
+    "outs": 57
+   },
+   "high_pressure": {
+    "sr": 158.21,
+    "avg": 27.18,
+    "balls": 481,
+    "outs": 28
+   },
+   "low_pressure": {
+    "sr": 155.65,
+    "avg": 42.89,
+    "balls": 248,
+    "outs": 9
+   },
+   "delta_sr_raw": 6.31,
+   "delta_sr": 6.31,
+   "delta_avg_raw": -5.78,
+   "delta_avg": -5.78,
+   "confidence": 1.0
+  },
+  {
+   "name": "AL Menaria",
+   "chase_balls": 128,
+   "chase_innings": 8,
+   "career_matches": 25,
+   "career_runs": 401,
+   "conventional": {
+    "sr": 117.97,
+    "avg": 21.57,
+    "balls": 128,
+    "outs": 7
+   },
+   "high_pressure": {
+    "sr": 125.0,
+    "avg": 21.67,
+    "balls": 52,
+    "outs": 3
+   },
+   "low_pressure": {
+    "sr": 105.41,
+    "avg": 39.0,
+    "balls": 37,
+    "outs": 1
+   },
+   "delta_sr_raw": 7.03,
+   "delta_sr": 6.09,
+   "delta_avg_raw": 0.1,
+   "delta_avg": 0.04,
+   "confidence": 0.87
+  },
+  {
+   "name": "SR Tendulkar",
+   "chase_balls": 932,
+   "chase_innings": 36,
+   "career_matches": 78,
+   "career_runs": 2334,
+   "conventional": {
+    "sr": 117.7,
+    "avg": 36.57,
+    "balls": 932,
+    "outs": 30
+   },
+   "high_pressure": {
+    "sr": 123.47,
+    "avg": 24.2,
+    "balls": 98,
+    "outs": 5
+   },
+   "low_pressure": {
+    "sr": 106.88,
+    "avg": 36.64,
+    "balls": 480,
+    "outs": 14
+   },
+   "delta_sr_raw": 5.77,
+   "delta_sr": 5.77,
+   "delta_avg_raw": -12.37,
+   "delta_avg": -7.73,
+   "confidence": 1.0
+  },
+  {
+   "name": "SR Watson",
+   "chase_balls": 1534,
+   "chase_innings": 78,
+   "career_matches": 145,
+   "career_runs": 3880,
+   "conventional": {
+    "sr": 140.94,
+    "avg": 32.27,
+    "balls": 1534,
+    "outs": 67
+   },
+   "high_pressure": {
+    "sr": 146.55,
+    "avg": 28.33,
+    "balls": 232,
+    "outs": 12
+   },
+   "low_pressure": {
+    "sr": 131.58,
+    "avg": 35.42,
+    "balls": 646,
+    "outs": 24
+   },
+   "delta_sr_raw": 5.61,
+   "delta_sr": 5.61,
+   "delta_avg_raw": -3.94,
+   "delta_avg": -3.94,
+   "confidence": 1.0
+  },
+  {
+   "name": "R Parag",
+   "chase_balls": 580,
+   "chase_innings": 41,
+   "career_matches": 89,
+   "career_runs": 1879,
+   "conventional": {
+    "sr": 144.31,
+    "avg": 24.62,
+    "balls": 580,
+    "outs": 34
+   },
+   "high_pressure": {
+    "sr": 149.74,
+    "avg": 17.88,
+    "balls": 191,
+    "outs": 16
+   },
+   "low_pressure": {
+    "sr": 127.94,
+    "avg": 29.0,
+    "balls": 136,
+    "outs": 6
+   },
+   "delta_sr_raw": 5.43,
+   "delta_sr": 5.43,
+   "delta_avg_raw": -6.74,
+   "delta_avg": -6.74,
+   "confidence": 1.0
+  },
+  {
+   "name": "Gurkeerat Singh",
+   "chase_balls": 209,
+   "chase_innings": 13,
+   "career_matches": 32,
+   "career_runs": 511,
+   "conventional": {
+    "sr": 116.75,
+    "avg": 27.11,
+    "balls": 209,
+    "outs": 9
+   },
+   "high_pressure": {
+    "sr": 121.15,
+    "avg": 18.0,
+    "balls": 104,
+    "outs": 7
+   },
+   "low_pressure": {
+    "sr": 76.92,
+    "avg": null,
+    "balls": 26,
+    "outs": 0
+   },
+   "delta_sr_raw": 4.4,
+   "delta_sr": 4.4,
+   "delta_avg_raw": -9.11,
+   "delta_avg": -7.97,
+   "confidence": 1.0
+  },
+  {
+   "name": "Harbhajan Singh",
+   "chase_balls": 305,
+   "chase_innings": 46,
+   "career_matches": 163,
+   "career_runs": 833,
+   "conventional": {
+    "sr": 126.56,
+    "avg": 12.45,
+    "balls": 305,
+    "outs": 31
+   },
+   "high_pressure": {
+    "sr": 130.61,
+    "avg": 11.43,
+    "balls": 245,
+    "outs": 28
+   },
+   "low_pressure": {
+    "sr": 116.22,
+    "avg": 14.33,
+    "balls": 37,
+    "outs": 3
+   },
+   "delta_sr_raw": 4.05,
+   "delta_sr": 4.05,
+   "delta_avg_raw": -1.02,
+   "delta_avg": -1.02,
+   "confidence": 1.0
+  },
+  {
+   "name": "AR Patel",
+   "chase_balls": 751,
+   "chase_innings": 68,
+   "career_matches": 177,
+   "career_runs": 2089,
+   "conventional": {
+    "sr": 140.88,
+    "avg": 20.35,
+    "balls": 751,
+    "outs": 52
+   },
+   "high_pressure": {
+    "sr": 144.42,
+    "avg": 19.78,
+    "balls": 493,
+    "outs": 36
+   },
+   "low_pressure": {
+    "sr": 78.79,
+    "avg": 6.5,
+    "balls": 33,
+    "outs": 4
+   },
+   "delta_sr_raw": 3.54,
+   "delta_sr": 3.54,
+   "delta_avg_raw": -0.57,
+   "delta_avg": -0.57,
+   "confidence": 1.0
+  },
+  {
+   "name": "Washington Sundar",
+   "chase_balls": 322,
+   "chase_innings": 30,
+   "career_matches": 81,
+   "career_runs": 888,
+   "conventional": {
+    "sr": 142.55,
+    "avg": 19.96,
+    "balls": 322,
+    "outs": 23
+   },
+   "high_pressure": {
+    "sr": 145.4,
+    "avg": 16.93,
+    "balls": 163,
+    "outs": 14
+   },
+   "low_pressure": {
+    "sr": 110.61,
+    "avg": 36.5,
+    "balls": 66,
+    "outs": 2
+   },
+   "delta_sr_raw": 2.85,
+   "delta_sr": 2.85,
+   "delta_avg_raw": -3.03,
+   "delta_avg": -3.03,
+   "confidence": 1.0
+  },
+  {
+   "name": "YV Takawale",
+   "chase_balls": 118,
+   "chase_innings": 4,
+   "career_matches": 10,
+   "career_runs": 192,
+   "conventional": {
+    "sr": 110.17,
+    "avg": 32.5,
+    "balls": 118,
+    "outs": 4
+   },
+   "high_pressure": {
+    "sr": 116.67,
+    "avg": 28.0,
+    "balls": 24,
+    "outs": 1
+   },
+   "low_pressure": {
+    "sr": 113.64,
+    "avg": 37.5,
+    "balls": 66,
+    "outs": 2
+   },
+   "delta_sr_raw": 6.5,
+   "delta_sr": 2.6,
+   "delta_avg_raw": -4.5,
+   "delta_avg": -0.56,
+   "confidence": 0.4
+  },
+  {
+   "name": "JD Ryder",
+   "chase_balls": 243,
+   "chase_innings": 15,
+   "career_matches": 29,
+   "career_runs": 604,
+   "conventional": {
+    "sr": 126.34,
+    "avg": 21.93,
+    "balls": 243,
+    "outs": 14
+   },
+   "high_pressure": {
+    "sr": 130.77,
+    "avg": 11.33,
+    "balls": 26,
+    "outs": 3
+   },
+   "low_pressure": {
+    "sr": 132.43,
+    "avg": 24.5,
+    "balls": 148,
+    "outs": 8
+   },
+   "delta_sr_raw": 4.43,
+   "delta_sr": 1.92,
+   "delta_avg_raw": -10.6,
+   "delta_avg": -3.97,
+   "confidence": 0.43
+  },
+  {
+   "name": "GH Vihari",
+   "chase_balls": 193,
+   "chase_innings": 12,
+   "career_matches": 23,
+   "career_runs": 284,
+   "conventional": {
+    "sr": 92.75,
+    "avg": 17.9,
+    "balls": 193,
+    "outs": 10
+   },
+   "high_pressure": {
+    "sr": 94.23,
+    "avg": 7.0,
+    "balls": 52,
+    "outs": 7
+   },
+   "low_pressure": {
+    "sr": 80.0,
+    "avg": null,
+    "balls": 45,
+    "outs": 0
+   },
+   "delta_sr_raw": 1.48,
+   "delta_sr": 1.28,
+   "delta_avg_raw": -10.9,
+   "delta_avg": -9.54,
+   "confidence": 0.87
+  },
+  {
+   "name": "M Vijay",
+   "chase_balls": 985,
+   "chase_innings": 51,
+   "career_matches": 105,
+   "career_runs": 2619,
+   "conventional": {
+    "sr": 113.4,
+    "avg": 24.28,
+    "balls": 985,
+    "outs": 46
+   },
+   "high_pressure": {
+    "sr": 113.64,
+    "avg": 21.43,
+    "balls": 132,
+    "outs": 7
+   },
+   "low_pressure": {
+    "sr": 108.23,
+    "avg": 31.25,
+    "balls": 462,
+    "outs": 16
+   },
+   "delta_sr_raw": 0.24,
+   "delta_sr": 0.24,
+   "delta_avg_raw": -2.85,
+   "delta_avg": -2.49,
+   "confidence": 1.0
+  },
+  {
+   "name": "AM Rahane",
+   "chase_balls": 2131,
+   "chase_innings": 97,
+   "career_matches": 197,
+   "career_runs": 5367,
+   "conventional": {
+    "sr": 122.24,
+    "avg": 30.65,
+    "balls": 2131,
+    "outs": 85
+   },
+   "high_pressure": {
+    "sr": 121.52,
+    "avg": 22.59,
+    "balls": 316,
+    "outs": 17
+   },
+   "low_pressure": {
+    "sr": 118.56,
+    "avg": 38.53,
+    "balls": 1040,
+    "outs": 32
+   },
+   "delta_sr_raw": -0.72,
+   "delta_sr": -0.72,
+   "delta_avg_raw": -8.06,
+   "delta_avg": -8.06,
+   "confidence": 1.0
+  },
+  {
+   "name": "RA Tripathi",
+   "chase_balls": 830,
+   "chase_innings": 53,
+   "career_matches": 98,
+   "career_runs": 2291,
+   "conventional": {
+    "sr": 141.69,
+    "avg": 25.02,
+    "balls": 830,
+    "outs": 47
+   },
+   "high_pressure": {
+    "sr": 140.72,
+    "avg": 13.82,
+    "balls": 167,
+    "outs": 17
+   },
+   "low_pressure": {
+    "sr": 139.56,
+    "avg": 23.58,
+    "balls": 321,
+    "outs": 19
+   },
+   "delta_sr_raw": -0.97,
+   "delta_sr": -0.97,
+   "delta_avg_raw": -11.2,
+   "delta_avg": -11.2,
+   "confidence": 1.0
+  },
+  {
+   "name": "PA Patel",
+   "chase_balls": 1205,
+   "chase_innings": 67,
+   "career_matches": 136,
+   "career_runs": 2848,
+   "conventional": {
+    "sr": 121.08,
+    "avg": 24.73,
+    "balls": 1205,
+    "outs": 59
+   },
+   "high_pressure": {
+    "sr": 119.28,
+    "avg": 12.38,
+    "balls": 83,
+    "outs": 8
+   },
+   "low_pressure": {
+    "sr": 118.91,
+    "avg": 26.77,
+    "balls": 788,
+    "outs": 35
+   },
+   "delta_sr_raw": -1.8,
+   "delta_sr": -1.8,
+   "delta_avg_raw": -12.35,
+   "delta_avg": -12.35,
+   "confidence": 1.0
+  },
+  {
+   "name": "R Ravindra",
+   "chase_balls": 223,
+   "chase_innings": 12,
+   "career_matches": 18,
+   "career_runs": 413,
+   "conventional": {
+    "sr": 145.74,
+    "avg": 29.55,
+    "balls": 223,
+    "outs": 11
+   },
+   "high_pressure": {
+    "sr": 143.75,
+    "avg": 18.4,
+    "balls": 64,
+    "outs": 5
+   },
+   "low_pressure": {
+    "sr": 155.66,
+    "avg": 33.0,
+    "balls": 106,
+    "outs": 5
+   },
+   "delta_sr_raw": -1.99,
+   "delta_sr": -1.99,
+   "delta_avg_raw": -11.15,
+   "delta_avg": -6.97,
+   "confidence": 1.0
+  },
+  {
+   "name": "H Klaasen",
+   "chase_balls": 425,
+   "chase_innings": 24,
+   "career_matches": 60,
+   "career_runs": 2104,
+   "conventional": {
+    "sr": 156.94,
+    "avg": 33.35,
+    "balls": 425,
+    "outs": 20
+   },
+   "high_pressure": {
+    "sr": 154.9,
+    "avg": 28.73,
+    "balls": 204,
+    "outs": 11
+   },
+   "low_pressure": {
+    "sr": 140.48,
+    "avg": 19.67,
+    "balls": 42,
+    "outs": 3
+   },
+   "delta_sr_raw": -2.04,
+   "delta_sr": -2.04,
+   "delta_avg_raw": -4.62,
+   "delta_avg": -4.62,
+   "confidence": 1.0
+  },
+  {
+   "name": "JM Bairstow",
+   "chase_balls": 725,
+   "chase_innings": 31,
+   "career_matches": 52,
+   "career_runs": 1674,
+   "conventional": {
+    "sr": 146.9,
+    "avg": 39.44,
+    "balls": 725,
+    "outs": 27
+   },
+   "high_pressure": {
+    "sr": 142.11,
+    "avg": 10.8,
+    "balls": 38,
+    "outs": 5
+   },
+   "low_pressure": {
+    "sr": 152.33,
+    "avg": 42.29,
+    "balls": 472,
+    "outs": 17
+   },
+   "delta_sr_raw": -4.79,
+   "delta_sr": -3.03,
+   "delta_avg_raw": -28.64,
+   "delta_avg": -17.9,
+   "confidence": 0.63
+  },
+  {
+   "name": "HC Brook",
+   "chase_balls": 60,
+   "chase_innings": 5,
+   "career_matches": 11,
+   "career_runs": 190,
+   "conventional": {
+    "sr": 70.0,
+    "avg": 8.4,
+    "balls": 60,
+    "outs": 5
+   },
+   "high_pressure": {
+    "sr": 60.87,
+    "avg": 14.0,
+    "balls": 23,
+    "outs": 1
+   },
+   "low_pressure": {
+    "sr": 48.39,
+    "avg": 3.75,
+    "balls": 31,
+    "outs": 4
+   },
+   "delta_sr_raw": -9.13,
+   "delta_sr": -3.5,
+   "delta_avg_raw": 5.6,
+   "delta_avg": 0.7,
+   "confidence": 0.38
+  },
+  {
+   "name": "C de Grandhomme",
+   "chase_balls": 147,
+   "chase_innings": 11,
+   "career_matches": 25,
+   "career_runs": 303,
+   "conventional": {
+    "sr": 115.65,
+    "avg": 21.25,
+    "balls": 147,
+    "outs": 8
+   },
+   "high_pressure": {
+    "sr": 111.7,
+    "avg": 26.25,
+    "balls": 94,
+    "outs": 4
+   },
+   "low_pressure": {
+    "sr": 110.0,
+    "avg": 22.0,
+    "balls": 20,
+    "outs": 1
+   },
+   "delta_sr_raw": -3.95,
+   "delta_sr": -3.95,
+   "delta_avg_raw": 5.0,
+   "delta_avg": 2.5,
+   "confidence": 1.0
+  },
+  {
+   "name": "KC Sangakkara",
+   "chase_balls": 514,
+   "chase_innings": 30,
+   "career_matches": 68,
+   "career_runs": 1687,
+   "conventional": {
+    "sr": 116.54,
+    "avg": 20.66,
+    "balls": 514,
+    "outs": 29
+   },
+   "high_pressure": {
+    "sr": 112.12,
+    "avg": 12.33,
+    "balls": 99,
+    "outs": 9
+   },
+   "low_pressure": {
+    "sr": 124.04,
+    "avg": 37.83,
+    "balls": 183,
+    "outs": 6
+   },
+   "delta_sr_raw": -4.42,
+   "delta_sr": -4.42,
+   "delta_avg_raw": -8.33,
+   "delta_avg": -8.33,
+   "confidence": 1.0
+  },
+  {
+   "name": "RV Uthappa",
+   "chase_balls": 2103,
+   "chase_innings": 115,
+   "career_matches": 197,
+   "career_runs": 4954,
+   "conventional": {
+    "sr": 134.66,
+    "avg": 27.5,
+    "balls": 2103,
+    "outs": 103
+   },
+   "high_pressure": {
+    "sr": 129.94,
+    "avg": 20.05,
+    "balls": 324,
+    "outs": 21
+   },
+   "low_pressure": {
+    "sr": 126.9,
+    "avg": 26.29,
+    "balls": 1015,
+    "outs": 49
+   },
+   "delta_sr_raw": -4.72,
+   "delta_sr": -4.72,
+   "delta_avg_raw": -7.45,
+   "delta_avg": -7.45,
+   "confidence": 1.0
+  },
+  {
+   "name": "CA Lynn",
+   "chase_balls": 486,
+   "chase_innings": 23,
+   "career_matches": 42,
+   "career_runs": 1329,
+   "conventional": {
+    "sr": 146.09,
+    "avg": 33.81,
+    "balls": 486,
+    "outs": 21
+   },
+   "high_pressure": {
+    "sr": 140.98,
+    "avg": 43.0,
+    "balls": 61,
+    "outs": 2
+   },
+   "low_pressure": {
+    "sr": 153.4,
+    "avg": 47.4,
+    "balls": 309,
+    "outs": 10
+   },
+   "delta_sr_raw": -5.11,
+   "delta_sr": -5.11,
+   "delta_avg_raw": 9.19,
+   "delta_avg": 2.3,
+   "confidence": 1.0
+  },
+  {
+   "name": "JR Hopes",
+   "chase_balls": 184,
+   "chase_innings": 12,
+   "career_matches": 20,
+   "career_runs": 417,
+   "conventional": {
+    "sr": 142.93,
+    "avg": 29.22,
+    "balls": 184,
+    "outs": 9
+   },
+   "high_pressure": {
+    "sr": 137.23,
+    "avg": 32.25,
+    "balls": 94,
+    "outs": 4
+   },
+   "low_pressure": {
+    "sr": 112.5,
+    "avg": 15.0,
+    "balls": 40,
+    "outs": 3
+   },
+   "delta_sr_raw": -5.7,
+   "delta_sr": -5.7,
+   "delta_avg_raw": 3.03,
+   "delta_avg": 1.51,
+   "confidence": 1.0
+  },
+  {
+   "name": "C Green",
+   "chase_balls": 274,
+   "chase_innings": 21,
+   "career_matches": 43,
+   "career_runs": 1029,
+   "conventional": {
+    "sr": 150.0,
+    "avg": 29.36,
+    "balls": 274,
+    "outs": 14
+   },
+   "high_pressure": {
+    "sr": 143.86,
+    "avg": 27.33,
+    "balls": 57,
+    "outs": 3
+   },
+   "low_pressure": {
+    "sr": 121.0,
+    "avg": 24.2,
+    "balls": 100,
+    "outs": 5
+   },
+   "delta_sr_raw": -6.14,
+   "delta_sr": -5.83,
+   "delta_avg_raw": -2.03,
+   "delta_avg": -0.76,
+   "confidence": 0.95
+  },
+  {
+   "name": "PP Shaw",
+   "chase_balls": 619,
+   "chase_innings": 42,
+   "career_matches": 79,
+   "career_runs": 1892,
+   "conventional": {
+    "sr": 148.95,
+    "avg": 21.95,
+    "balls": 619,
+    "outs": 42
+   },
+   "high_pressure": {
+    "sr": 142.86,
+    "avg": 23.33,
+    "balls": 98,
+    "outs": 6
+   },
+   "low_pressure": {
+    "sr": 155.87,
+    "avg": 25.36,
+    "balls": 358,
+    "outs": 22
+   },
+   "delta_sr_raw": -6.09,
+   "delta_sr": -6.09,
+   "delta_avg_raw": 1.38,
+   "delta_avg": 1.03,
+   "confidence": 1.0
+  },
+  {
+   "name": "J Botha",
+   "chase_balls": 230,
+   "chase_innings": 12,
+   "career_matches": 34,
+   "career_runs": 409,
+   "conventional": {
+    "sr": 117.83,
+    "avg": 30.11,
+    "balls": 230,
+    "outs": 9
+   },
+   "high_pressure": {
+    "sr": 111.59,
+    "avg": 12.83,
+    "balls": 69,
+    "outs": 6
+   },
+   "low_pressure": {
+    "sr": 86.49,
+    "avg": 32.0,
+    "balls": 37,
+    "outs": 1
+   },
+   "delta_sr_raw": -6.24,
+   "delta_sr": -6.24,
+   "delta_avg_raw": -17.28,
+   "delta_avg": -12.96,
+   "confidence": 1.0
+  },
+  {
+   "name": "D Brevis",
+   "chase_balls": 186,
+   "chase_innings": 11,
+   "career_matches": 24,
+   "career_runs": 606,
+   "conventional": {
+    "sr": 139.25,
+    "avg": 23.55,
+    "balls": 186,
+    "outs": 11
+   },
+   "high_pressure": {
+    "sr": 124.0,
+    "avg": 7.75,
+    "balls": 25,
+    "outs": 4
+   },
+   "low_pressure": {
+    "sr": 120.41,
+    "avg": 19.67,
+    "balls": 49,
+    "outs": 3
+   },
+   "delta_sr_raw": -15.25,
+   "delta_sr": -6.35,
+   "delta_avg_raw": -15.8,
+   "delta_avg": -7.9,
+   "confidence": 0.42
+  },
+  {
+   "name": "LA Pomersbach",
+   "chase_balls": 164,
+   "chase_innings": 10,
+   "career_matches": 16,
+   "career_runs": 302,
+   "conventional": {
+    "sr": 111.59,
+    "avg": 26.14,
+    "balls": 164,
+    "outs": 7
+   },
+   "high_pressure": {
+    "sr": 102.38,
+    "avg": 21.5,
+    "balls": 42,
+    "outs": 2
+   },
+   "low_pressure": {
+    "sr": 116.67,
+    "avg": 21.0,
+    "balls": 72,
+    "outs": 4
+   },
+   "delta_sr_raw": -9.21,
+   "delta_sr": -6.45,
+   "delta_avg_raw": -4.64,
+   "delta_avg": -1.16,
+   "confidence": 0.7
+  },
+  {
+   "name": "Priyansh Arya",
+   "chase_balls": 172,
+   "chase_innings": 15,
+   "career_matches": 31,
+   "career_runs": 909,
+   "conventional": {
+    "sr": 183.14,
+    "avg": 21.0,
+    "balls": 172,
+    "outs": 15
+   },
+   "high_pressure": {
+    "sr": 163.64,
+    "avg": 12.0,
+    "balls": 22,
+    "outs": 3
+   },
+   "low_pressure": {
+    "sr": 190.0,
+    "avg": 22.8,
+    "balls": 120,
+    "outs": 10
+   },
+   "delta_sr_raw": -19.5,
+   "delta_sr": -7.15,
+   "delta_avg_raw": -9.0,
+   "delta_avg": -3.38,
+   "confidence": 0.37
+  },
+  {
+   "name": "SN Khan",
+   "chase_balls": 219,
+   "chase_innings": 19,
+   "career_matches": 43,
+   "career_runs": 746,
+   "conventional": {
+    "sr": 112.33,
+    "avg": 13.67,
+    "balls": 219,
+    "outs": 18
+   },
+   "high_pressure": {
+    "sr": 104.88,
+    "avg": 7.82,
+    "balls": 82,
+    "outs": 11
+   },
+   "low_pressure": {
+    "sr": 115.09,
+    "avg": 20.33,
+    "balls": 53,
+    "outs": 3
+   },
+   "delta_sr_raw": -7.45,
+   "delta_sr": -7.45,
+   "delta_avg_raw": -5.85,
+   "delta_avg": -5.85,
+   "confidence": 1.0
+  },
+  {
+   "name": "CH Gayle",
+   "chase_balls": 1460,
+   "chase_innings": 65,
+   "career_matches": 141,
+   "career_runs": 4997,
+   "conventional": {
+    "sr": 143.29,
+    "avg": 38.74,
+    "balls": 1460,
+    "outs": 54
+   },
+   "high_pressure": {
+    "sr": 135.65,
+    "avg": 29.3,
+    "balls": 216,
+    "outs": 10
+   },
+   "low_pressure": {
+    "sr": 144.9,
+    "avg": 32.5,
+    "balls": 628,
+    "outs": 28
+   },
+   "delta_sr_raw": -7.64,
+   "delta_sr": -7.64,
+   "delta_avg_raw": -9.44,
+   "delta_avg": -9.44,
+   "confidence": 1.0
+  },
+  {
+   "name": "WP Saha",
+   "chase_balls": 1000,
+   "chase_innings": 64,
+   "career_matches": 143,
+   "career_runs": 2934,
+   "conventional": {
+    "sr": 125.3,
+    "avg": 23.2,
+    "balls": 1000,
+    "outs": 54
+   },
+   "high_pressure": {
+    "sr": 116.48,
+    "avg": 20.73,
+    "balls": 267,
+    "outs": 15
+   },
+   "low_pressure": {
+    "sr": 132.68,
+    "avg": 26.3,
+    "balls": 456,
+    "outs": 23
+   },
+   "delta_sr_raw": -8.82,
+   "delta_sr": -8.82,
+   "delta_avg_raw": -2.47,
+   "delta_avg": -2.47,
+   "confidence": 1.0
+  },
+  {
+   "name": "KP Pietersen",
+   "chase_balls": 475,
+   "chase_innings": 22,
+   "career_matches": 36,
+   "career_runs": 1001,
+   "conventional": {
+    "sr": 134.74,
+    "avg": 40.0,
+    "balls": 475,
+    "outs": 16
+   },
+   "high_pressure": {
+    "sr": 125.53,
+    "avg": 19.67,
+    "balls": 94,
+    "outs": 6
+   },
+   "low_pressure": {
+    "sr": 138.2,
+    "avg": 49.2,
+    "balls": 178,
+    "outs": 5
+   },
+   "delta_sr_raw": -9.21,
+   "delta_sr": -9.21,
+   "delta_avg_raw": -20.33,
+   "delta_avg": -15.25,
+   "confidence": 1.0
+  },
+  {
+   "name": "DA Warner",
+   "chase_balls": 2314,
+   "chase_innings": 97,
+   "career_matches": 184,
+   "career_runs": 6567,
+   "conventional": {
+    "sr": 141.96,
+    "avg": 39.11,
+    "balls": 2314,
+    "outs": 84
+   },
+   "high_pressure": {
+    "sr": 132.31,
+    "avg": 34.4,
+    "balls": 390,
+    "outs": 15
+   },
+   "low_pressure": {
+    "sr": 147.35,
+    "avg": 38.61,
+    "balls": 1284,
+    "outs": 49
+   },
+   "delta_sr_raw": -9.65,
+   "delta_sr": -9.65,
+   "delta_avg_raw": -4.71,
+   "delta_avg": -4.71,
+   "confidence": 1.0
+  },
+  {
+   "name": "AJ Finch",
+   "chase_balls": 743,
+   "chase_innings": 42,
+   "career_matches": 90,
+   "career_runs": 2092,
+   "conventional": {
+    "sr": 132.84,
+    "avg": 25.31,
+    "balls": 743,
+    "outs": 39
+   },
+   "high_pressure": {
+    "sr": 121.91,
+    "avg": 18.08,
+    "balls": 178,
+    "outs": 12
+   },
+   "low_pressure": {
+    "sr": 132.12,
+    "avg": 34.0,
+    "balls": 386,
+    "outs": 15
+   },
+   "delta_sr_raw": -10.93,
+   "delta_sr": -10.93,
+   "delta_avg_raw": -7.23,
+   "delta_avg": -7.23,
+   "confidence": 1.0
+  },
+  {
+   "name": "VR Iyer",
+   "chase_balls": 614,
+   "chase_innings": 30,
+   "career_matches": 62,
+   "career_runs": 1677,
+   "conventional": {
+    "sr": 141.53,
+    "avg": 34.76,
+    "balls": 614,
+    "outs": 25
+   },
+   "high_pressure": {
+    "sr": 129.89,
+    "avg": 18.83,
+    "balls": 87,
+    "outs": 6
+   },
+   "low_pressure": {
+    "sr": 147.76,
+    "avg": 41.25,
+    "balls": 335,
+    "outs": 12
+   },
+   "delta_sr_raw": -11.64,
+   "delta_sr": -11.64,
+   "delta_avg_raw": -15.93,
+   "delta_avg": -11.95,
+   "confidence": 1.0
+  },
+  {
+   "name": "RE van der Merwe",
+   "chase_balls": 61,
+   "chase_innings": 6,
+   "career_matches": 21,
+   "career_runs": 159,
+   "conventional": {
+    "sr": 103.28,
+    "avg": 10.5,
+    "balls": 61,
+    "outs": 6
+   },
+   "high_pressure": {
+    "sr": 82.86,
+    "avg": 7.25,
+    "balls": 35,
+    "outs": 4
+   },
+   "low_pressure": {
+    "sr": 85.0,
+    "avg": 8.5,
+    "balls": 20,
+    "outs": 2
+   },
+   "delta_sr_raw": -20.42,
+   "delta_sr": -11.91,
+   "delta_avg_raw": -3.25,
+   "delta_avg": -1.62,
+   "confidence": 0.58
+  },
+  {
+   "name": "GC Smith",
+   "chase_balls": 383,
+   "chase_innings": 18,
+   "career_matches": 29,
+   "career_runs": 739,
+   "conventional": {
+    "sr": 96.61,
+    "avg": 23.12,
+    "balls": 383,
+    "outs": 16
+   },
+   "high_pressure": {
+    "sr": 81.25,
+    "avg": 19.5,
+    "balls": 48,
+    "outs": 2
+   },
+   "low_pressure": {
+    "sr": 102.42,
+    "avg": 35.33,
+    "balls": 207,
+    "outs": 6
+   },
+   "delta_sr_raw": -15.36,
+   "delta_sr": -12.29,
+   "delta_avg_raw": -3.62,
+   "delta_avg": -0.91,
+   "confidence": 0.8
+  },
+  {
+   "name": "LMP Simmons",
+   "chase_balls": 313,
+   "chase_innings": 11,
+   "career_matches": 29,
+   "career_runs": 1079,
+   "conventional": {
+    "sr": 132.91,
+    "avg": 46.22,
+    "balls": 313,
+    "outs": 9
+   },
+   "high_pressure": {
+    "sr": 120.0,
+    "avg": 78.0,
+    "balls": 65,
+    "outs": 1
+   },
+   "low_pressure": {
+    "sr": 136.75,
+    "avg": 37.83,
+    "balls": 166,
+    "outs": 6
+   },
+   "delta_sr_raw": -12.91,
+   "delta_sr": -12.91,
+   "delta_avg_raw": 31.78,
+   "delta_avg": 3.97,
+   "confidence": 1.0
+  },
+  {
+   "name": "PD Salt",
+   "chase_balls": 377,
+   "chase_innings": 17,
+   "career_matches": 40,
+   "career_runs": 1258,
+   "conventional": {
+    "sr": 176.13,
+    "avg": 44.27,
+    "balls": 377,
+    "outs": 15
+   },
+   "high_pressure": {
+    "sr": 146.15,
+    "avg": 38.0,
+    "balls": 26,
+    "outs": 1
+   },
+   "low_pressure": {
+    "sr": 172.44,
+    "avg": 44.83,
+    "balls": 312,
+    "outs": 12
+   },
+   "delta_sr_raw": -29.98,
+   "delta_sr": -12.99,
+   "delta_avg_raw": -6.27,
+   "delta_avg": -0.78,
+   "confidence": 0.43
+  },
+  {
+   "name": "SM Katich",
+   "chase_balls": 174,
+   "chase_innings": 9,
+   "career_matches": 11,
+   "career_runs": 241,
+   "conventional": {
+    "sr": 132.18,
+    "avg": 28.75,
+    "balls": 174,
+    "outs": 8
+   },
+   "high_pressure": {
+    "sr": 106.45,
+    "avg": 33.0,
+    "balls": 31,
+    "outs": 1
+   },
+   "low_pressure": {
+    "sr": 129.49,
+    "avg": 25.25,
+    "balls": 78,
+    "outs": 4
+   },
+   "delta_sr_raw": -25.73,
+   "delta_sr": -13.29,
+   "delta_avg_raw": 4.25,
+   "delta_avg": 0.53,
+   "confidence": 0.52
+  },
+  {
+   "name": "MEK Hussey",
+   "chase_balls": 574,
+   "chase_innings": 23,
+   "career_matches": 58,
+   "career_runs": 1977,
+   "conventional": {
+    "sr": 115.68,
+    "avg": 31.62,
+    "balls": 574,
+    "outs": 21
+   },
+   "high_pressure": {
+    "sr": 101.61,
+    "avg": 10.5,
+    "balls": 62,
+    "outs": 6
+   },
+   "low_pressure": {
+    "sr": 118.37,
+    "avg": 49.71,
+    "balls": 294,
+    "outs": 7
+   },
+   "delta_sr_raw": -14.07,
+   "delta_sr": -14.07,
+   "delta_avg_raw": -21.12,
+   "delta_avg": -15.84,
+   "confidence": 1.0
+  },
+  {
+   "name": "S Dhawan",
+   "chase_balls": 2242,
+   "chase_innings": 94,
+   "career_matches": 221,
+   "career_runs": 6769,
+   "conventional": {
+    "sr": 126.81,
+    "avg": 36.45,
+    "balls": 2242,
+    "outs": 78
+   },
+   "high_pressure": {
+    "sr": 112.58,
+    "avg": 15.45,
+    "balls": 151,
+    "outs": 11
+   },
+   "low_pressure": {
+    "sr": 123.35,
+    "avg": 43.14,
+    "balls": 1469,
+    "outs": 42
+   },
+   "delta_sr_raw": -14.23,
+   "delta_sr": -14.23,
+   "delta_avg_raw": -21.0,
+   "delta_avg": -21.0,
+   "confidence": 1.0
+  },
+  {
+   "name": "RD Gaikwad",
+   "chase_balls": 871,
+   "chase_innings": 38,
+   "career_matches": 84,
+   "career_runs": 2839,
+   "conventional": {
+    "sr": 129.28,
+    "avg": 35.19,
+    "balls": 871,
+    "outs": 32
+   },
+   "high_pressure": {
+    "sr": 114.41,
+    "avg": 15.0,
+    "balls": 118,
+    "outs": 9
+   },
+   "low_pressure": {
+    "sr": 126.67,
+    "avg": 40.38,
+    "balls": 510,
+    "outs": 16
+   },
+   "delta_sr_raw": -14.87,
+   "delta_sr": -14.87,
+   "delta_avg_raw": -20.19,
+   "delta_avg": -20.19,
+   "confidence": 1.0
+  },
+  {
+   "name": "PC Valthaty",
+   "chase_balls": 216,
+   "chase_innings": 11,
+   "career_matches": 23,
+   "career_runs": 505,
+   "conventional": {
+    "sr": 138.89,
+    "avg": 30.0,
+    "balls": 216,
+    "outs": 10
+   },
+   "high_pressure": {
+    "sr": 115.38,
+    "avg": null,
+    "balls": 39,
+    "outs": 0
+   },
+   "low_pressure": {
+    "sr": 172.83,
+    "avg": 159.0,
+    "balls": 92,
+    "outs": 1
+   },
+   "delta_sr_raw": -23.51,
+   "delta_sr": -15.28,
+   "delta_avg_raw": null,
+   "delta_avg": null,
+   "confidence": 0.65
+  },
+  {
+   "name": "MR Marsh",
+   "chase_balls": 509,
+   "chase_innings": 31,
+   "career_matches": 68,
+   "career_runs": 1855,
+   "conventional": {
+    "sr": 138.9,
+    "avg": 23.57,
+    "balls": 509,
+    "outs": 30
+   },
+   "high_pressure": {
+    "sr": 123.45,
+    "avg": 17.9,
+    "balls": 145,
+    "outs": 10
+   },
+   "low_pressure": {
+    "sr": 155.66,
+    "avg": 23.57,
+    "balls": 212,
+    "outs": 14
+   },
+   "delta_sr_raw": -15.45,
+   "delta_sr": -15.45,
+   "delta_avg_raw": -5.67,
+   "delta_avg": -5.67,
+   "confidence": 1.0
+  },
+  {
+   "name": "BB McCullum",
+   "chase_balls": 905,
+   "chase_innings": 50,
+   "career_matches": 109,
+   "career_runs": 2882,
+   "conventional": {
+    "sr": 132.49,
+    "avg": 24.98,
+    "balls": 905,
+    "outs": 48
+   },
+   "high_pressure": {
+    "sr": 115.91,
+    "avg": 20.4,
+    "balls": 88,
+    "outs": 5
+   },
+   "low_pressure": {
+    "sr": 134.21,
+    "avg": 24.81,
+    "balls": 573,
+    "outs": 31
+   },
+   "delta_sr_raw": -16.58,
+   "delta_sr": -16.58,
+   "delta_avg_raw": -4.58,
+   "delta_avg": -2.86,
+   "confidence": 1.0
+  },
+  {
+   "name": "Anuj Rawat",
+   "chase_balls": 145,
+   "chase_innings": 9,
+   "career_matches": 21,
+   "career_runs": 318,
+   "conventional": {
+    "sr": 104.83,
+    "avg": 19.0,
+    "balls": 145,
+    "outs": 8
+   },
+   "high_pressure": {
+    "sr": 85.71,
+    "avg": 12.0,
+    "balls": 56,
+    "outs": 4
+   },
+   "low_pressure": {
+    "sr": 84.85,
+    "avg": 14.0,
+    "balls": 33,
+    "outs": 2
+   },
+   "delta_sr_raw": -19.12,
+   "delta_sr": -17.85,
+   "delta_avg_raw": -7.0,
+   "delta_avg": -3.5,
+   "confidence": 0.93
+  },
+  {
+   "name": "AC Gilchrist",
+   "chase_balls": 755,
+   "chase_innings": 39,
+   "career_matches": 80,
+   "career_runs": 2069,
+   "conventional": {
+    "sr": 149.14,
+    "avg": 31.28,
+    "balls": 755,
+    "outs": 36
+   },
+   "high_pressure": {
+    "sr": 129.31,
+    "avg": 15.0,
+    "balls": 58,
+    "outs": 5
+   },
+   "low_pressure": {
+    "sr": 152.37,
+    "avg": 37.21,
+    "balls": 464,
+    "outs": 19
+   },
+   "delta_sr_raw": -19.83,
+   "delta_sr": -19.17,
+   "delta_avg_raw": -16.28,
+   "delta_avg": -10.18,
+   "confidence": 0.97
+  },
+  {
+   "name": "RR Rossouw",
+   "chase_balls": 229,
+   "chase_innings": 16,
+   "career_matches": 22,
+   "career_runs": 473,
+   "conventional": {
+    "sr": 141.48,
+    "avg": 21.6,
+    "balls": 229,
+    "outs": 15
+   },
+   "high_pressure": {
+    "sr": 117.46,
+    "avg": 12.33,
+    "balls": 63,
+    "outs": 6
+   },
+   "low_pressure": {
+    "sr": 157.0,
+    "avg": 31.4,
+    "balls": 100,
+    "outs": 5
+   },
+   "delta_sr_raw": -24.02,
+   "delta_sr": -24.02,
+   "delta_avg_raw": -9.27,
+   "delta_avg": -6.95,
+   "confidence": 1.0
+  },
+  {
+   "name": "D Padikkal",
+   "chase_balls": 699,
+   "chase_innings": 36,
+   "career_matches": 89,
+   "career_runs": 2270,
+   "conventional": {
+    "sr": 135.48,
+    "avg": 28.7,
+    "balls": 699,
+    "outs": 33
+   },
+   "high_pressure": {
+    "sr": 111.11,
+    "avg": 18.0,
+    "balls": 81,
+    "outs": 5
+   },
+   "low_pressure": {
+    "sr": 162.3,
+    "avg": 55.18,
+    "balls": 374,
+    "outs": 11
+   },
+   "delta_sr_raw": -24.37,
+   "delta_sr": -24.37,
+   "delta_avg_raw": -10.7,
+   "delta_avg": -6.69,
+   "confidence": 1.0
+  },
+  {
+   "name": "Q de Kock",
+   "chase_balls": 1256,
+   "chase_innings": 55,
+   "career_matches": 118,
+   "career_runs": 3444,
+   "conventional": {
+    "sr": 133.44,
+    "avg": 33.52,
+    "balls": 1256,
+    "outs": 50
+   },
+   "high_pressure": {
+    "sr": 106.92,
+    "avg": 13.9,
+    "balls": 130,
+    "outs": 10
+   },
+   "low_pressure": {
+    "sr": 126.46,
+    "avg": 36.78,
+    "balls": 669,
+    "outs": 23
+   },
+   "delta_sr_raw": -26.52,
+   "delta_sr": -26.52,
+   "delta_avg_raw": -19.62,
+   "delta_avg": -19.62,
+   "confidence": 1.0
+  },
+  {
+   "name": "Abishek Porel",
+   "chase_balls": 231,
+   "chase_innings": 17,
+   "career_matches": 33,
+   "career_runs": 769,
+   "conventional": {
+    "sr": 135.06,
+    "avg": 19.5,
+    "balls": 231,
+    "outs": 16
+   },
+   "high_pressure": {
+    "sr": 107.69,
+    "avg": 11.67,
+    "balls": 65,
+    "outs": 6
+   },
+   "low_pressure": {
+    "sr": 146.27,
+    "avg": 24.5,
+    "balls": 134,
+    "outs": 8
+   },
+   "delta_sr_raw": -27.37,
+   "delta_sr": -27.37,
+   "delta_avg_raw": -7.83,
+   "delta_avg": -5.87,
+   "confidence": 1.0
+  },
+  {
+   "name": "SP Narine",
+   "chase_balls": 509,
+   "chase_innings": 63,
+   "career_matches": 201,
+   "career_runs": 1820,
+   "conventional": {
+    "sr": 170.73,
+    "avg": 16.4,
+    "balls": 509,
+    "outs": 53
+   },
+   "high_pressure": {
+    "sr": 142.24,
+    "avg": 9.17,
+    "balls": 116,
+    "outs": 18
+   },
+   "low_pressure": {
+    "sr": 183.39,
+    "avg": 20.85,
+    "balls": 307,
+    "outs": 27
+   },
+   "delta_sr_raw": -28.49,
+   "delta_sr": -28.49,
+   "delta_avg_raw": -7.23,
+   "delta_avg": -7.23,
+   "confidence": 1.0
+  },
+  {
+   "name": "CJ Anderson",
+   "chase_balls": 172,
+   "chase_innings": 13,
+   "career_matches": 30,
+   "career_runs": 538,
+   "conventional": {
+    "sr": 134.3,
+    "avg": 23.1,
+    "balls": 172,
+    "outs": 10
+   },
+   "high_pressure": {
+    "sr": 98.08,
+    "avg": 8.5,
+    "balls": 52,
+    "outs": 6
+   },
+   "low_pressure": {
+    "sr": 191.67,
+    "avg": null,
+    "balls": 24,
+    "outs": 0
+   },
+   "delta_sr_raw": -36.22,
+   "delta_sr": -31.39,
+   "delta_avg_raw": -14.6,
+   "delta_avg": -10.95,
+   "confidence": 0.87
+  },
+  {
+   "name": "TM Head",
+   "chase_balls": 225,
+   "chase_innings": 17,
+   "career_matches": 52,
+   "career_runs": 1556,
+   "conventional": {
+    "sr": 171.56,
+    "avg": 25.73,
+    "balls": 225,
+    "outs": 15
+   },
+   "high_pressure": {
+    "sr": 100.0,
+    "avg": 13.5,
+    "balls": 27,
+    "outs": 2
+   },
+   "low_pressure": {
+    "sr": 184.85,
+    "avg": 27.73,
+    "balls": 165,
+    "outs": 11
+   },
+   "delta_sr_raw": -71.56,
+   "delta_sr": -32.2,
+   "delta_avg_raw": -12.23,
+   "delta_avg": -3.06,
+   "confidence": 0.45
+  },
+  {
+   "name": "YBK Jaiswal",
+   "chase_balls": 903,
+   "chase_innings": 42,
+   "career_matches": 82,
+   "career_runs": 2593,
+   "conventional": {
+    "sr": 154.71,
+    "avg": 36.76,
+    "balls": 903,
+    "outs": 38
+   },
+   "high_pressure": {
+    "sr": 110.64,
+    "avg": 14.86,
+    "balls": 94,
+    "outs": 7
+   },
+   "low_pressure": {
+    "sr": 157.45,
+    "avg": 40.87,
+    "balls": 597,
+    "outs": 23
+   },
+   "delta_sr_raw": -44.07,
+   "delta_sr": -44.07,
+   "delta_avg_raw": -21.9,
+   "delta_avg": -19.16,
+   "confidence": 1.0
+  },
+  {
+   "name": "Abhishek Sharma",
+   "chase_balls": 678,
+   "chase_innings": 42,
+   "career_matches": 92,
+   "career_runs": 2379,
+   "conventional": {
+    "sr": 168.14,
+    "avg": 28.5,
+    "balls": 678,
+    "outs": 40
+   },
+   "high_pressure": {
+    "sr": 115.44,
+    "avg": 9.81,
+    "balls": 136,
+    "outs": 16
+   },
+   "low_pressure": {
+    "sr": 193.81,
+    "avg": 46.93,
+    "balls": 339,
+    "outs": 14
+   },
+   "delta_sr_raw": -52.7,
+   "delta_sr": -52.7,
+   "delta_avg_raw": -18.69,
+   "delta_avg": -18.69,
+   "confidence": 1.0
+  },
+  {
+   "name": "P Simran Singh",
+   "chase_balls": 576,
+   "chase_innings": 33,
+   "career_matches": 65,
+   "career_runs": 1865,
+   "conventional": {
+    "sr": 157.29,
+    "avg": 28.31,
+    "balls": 576,
+    "outs": 32
+   },
+   "high_pressure": {
+    "sr": 93.55,
+    "avg": 14.5,
+    "balls": 62,
+    "outs": 4
+   },
+   "low_pressure": {
+    "sr": 169.97,
+    "avg": 41.13,
+    "balls": 363,
+    "outs": 15
+   },
+   "delta_sr_raw": -63.74,
+   "delta_sr": -63.74,
+   "delta_avg_raw": -13.81,
+   "delta_avg": -6.91,
+   "confidence": 1.0
+  }
+ ]
+}
