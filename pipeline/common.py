@@ -20,6 +20,11 @@ RAW_ZIP = os.path.join(HERE, "raw", "ipl_json.zip")
 # so index.html's relative fetch("out/clutch.json") resolves correctly.
 OUT_DIR = os.path.join(REPO_ROOT, "out")
 
+# Cricsheet records a batter leaving injured as a 'wicket' of kind "retired hurt"
+# (or "retired not out"). Neither is a dismissal: the batter is not out, the
+# team has not lost a wicket, and the batter may come back to bat.
+NOT_OUT_KINDS = {"retired hurt", "retired not out"}
+
 
 def season_of(info):
     """Cricsheet 'season' is sometimes "2020/21" (straddles a new year) —

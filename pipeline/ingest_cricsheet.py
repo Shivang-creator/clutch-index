@@ -27,7 +27,7 @@ import os
 import sys
 from collections import defaultdict
 
-from common import OUT_DIR, RAW_ZIP, iter_matches, phase_of, season_of
+from common import NOT_OUT_KINDS, OUT_DIR, RAW_ZIP, iter_matches, phase_of, season_of
 
 OUT_FILE = os.path.join(OUT_DIR, "player_stats.json")
 
@@ -124,7 +124,7 @@ def process_match(data, players):
                 for w in d.get("wickets", []) or []:
                     kind = w.get("kind", "")
                     player_out = w.get("player_out")
-                    if player_out:
+                    if player_out and kind not in NOT_OUT_KINDS:
                         pb = players[player_out]["bat"]
                         pb["outs"] += 1
                         if ph == "death":

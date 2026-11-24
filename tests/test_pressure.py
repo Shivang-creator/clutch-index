@@ -117,3 +117,27 @@ def test_lateness_component_increases_through_the_innings():
     early = lateness_component(legal_balls_bowled=6, total_balls=120)
     late = lateness_component(legal_balls_bowled=114, total_balls=120)
     assert late > early
+
+
+def test_retired_hurt_is_not_a_dismissal(tmp_path):
+    """Cricsheet logs 'retired hurt' as a wicket entry. It is not out: no
+    wicket for the chase state, no dismissal for the batter's average."""
+    import json
+    import zipfile
+
+    from pressure import chase_deliveries
+
+    match = {"info": {"overs": 20}, "innings": [
+        {"team": "A", "overs": []},
+        {"team": "B", "target": {"runs": 150, "overs": 20}, "overs": [
+            {"over": 0, "deliveries": [
+                {"batter": "X", "bowler": "Z", "runs": {"batter": 0, "extras": 0, "total": 0},
+                 "wickets": [{"player_out": "X", "kind": "retired hurt"}]},
+                {"batter": "Y", "bowler": "Z", "runs": {"batter": 0, "extras": 0, "total": 0}},
+            ]}]}]}
+    zp = tmp_path / "m.zip"
+    with zipfile.ZipFile(zp, "w") as z:
+        z.writestr("1.json", json.dumps(match))
+    balls = list(chase_deliveries(zip_path=str(zp)))
+    assert balls[0]["dismissed_players"] == []
+    assert balls[1]["wickets_down_before_ball"] == 0

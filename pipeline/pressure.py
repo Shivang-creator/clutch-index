@@ -45,7 +45,7 @@ This module only touches run-chases (an innings with a Cricsheet "target"
 field). Innings batting first (setting a total) have no pressure score here
 — see README.md "Honest limits".
 """
-from common import iter_matches, phase_of
+from common import NOT_OUT_KINDS, iter_matches, phase_of
 
 # ---- weights (must sum to 1.0) ----
 W_RRR = 0.50   # required-rate-minus-current-rate: the number batters chase
@@ -181,7 +181,8 @@ def chase_deliveries(zip_path=None):
                         chase_overs=chase_overs,
                     )
 
-                    wickets_here = d.get("wickets", []) or []
+                    wickets_here = [w for w in (d.get("wickets", []) or [])
+                                    if w.get("kind") not in NOT_OUT_KINDS]
                     batter = d.get("batter")
                     dismissed_players = [w.get("player_out") for w in wickets_here if w.get("player_out")]
 
